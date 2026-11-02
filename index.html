@@ -1328,312 +1328,9 @@
       </ul>
     </div>
 
-    <!-- 18-Point Review Matrix -->
-    <div class="card" id="section-faults" style="border-color: var(--danger-red);">
-      <div class="card-hulk-title" style="color: #fca5a5;">
-        <span>💥 ALL 18 AMAZON &amp; FORUM FAILURE MODES CRUSHED</span>
-      </div>
-      <p style="color: #cbd5e1; font-size: 0.98rem;">
-        Amazon ratings for ASIN <strong>B0D8J85QB4</strong> sit at <strong>3.7 out of 5 stars</strong> across 230+ ratings. The negative reviews are from amateurs who didn't have a plan. Brandon has the cheat codes for all 18:
-      </p>
-
-      <div class="fail-grid">
-        <!-- 1 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">1. AC STUCK IN CELSIUS</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Looks good, but temp is stuck in Celsius and buttons don't turn on fan. Total garbage."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> Plug the white 6-pin secondary climate cable directly into the screen chassis port. Then in Factory Settings (<code>8888</code>) &rarr; CANbus Setup &rarr; toggle temperature from °C to °F.
-          </div>
-        </div>
-
-        <!-- 2 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">2. STUCK ON DEFROST ONLY</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Air only blows out of windshield defrost vents. Dash and floor vents are dead."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> Interrupted blend door sweep. Reconnect battery, turn key to ON (engine OFF), and <strong>wait 60 seconds silently</strong> without touching dials. The actuators will self-calibrate.
-          </div>
-        </div>
-
-        <!-- 3 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">3. REVERSED STEERING SEEK</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Volume works, but the Next Track button skips backwards and Previous skips forward."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> In Factory Settings (<code>8888</code>) &rarr; Protocol Keys &rarr; toggle <em>"Swap Seek+/Seek-"</em> or select the 2018 Ford CANbus firmware profile.
-          </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">4. ZERO SOUND ON B&amp;O</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Plugged into my 2018 Lariat, screen turned on, but ZERO sound came out of any speaker."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> 2018 introduced Ford's digital A2B audio bus. The factory ACM CD player must stay connected in the dash cavity to drive the A2B bus, and the CANbox must be set to "With Amp / B&amp;O".
-          </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">5. SEVERE CALL ECHO</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Callers hear themselves talking twice with an awful screeching echo like I'm taking a dump in an empty cathedral."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> Step 1: In Factory Settings (<code>8888</code>), reduce Mic Gain from 15 down to 6–8. Step 2: Mount external lapel mic at driver A-pillar.
-          </div>
-        </div>
-
-        <!-- 6 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">6. DOUBLE GUIDELINES</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★★☆☆</span>
-          </div>
-          <div class="fail-quote">"Backup camera works, but there are two sets of grid lines overlapping each other and looking like drunk road striping."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> Ford's OEM camera has hardware lines. Go to Android Settings &rarr; Reverse / Backcar Settings &rarr; toggle <strong>"Guide Lines: OFF"</strong>.
-          </div>
-        </div>
-
-        <!-- 7 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">7. DEAD TRUCK BATTERY</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Left my truck parked from Friday to Monday morning and the battery was drained stone dead."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> "Auto Sleep / Fast Boot" pulls 350mA+ and wakes the Ford Gateway Module. Go to Car Settings &rarr; System &rarr; Shutdown Delay &rarr; set to <strong>0 Minutes (Full Shutdown)</strong>.
-          </div>
-        </div>
-
-        <!-- 8 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">8. AIRBAG SRS LIGHT</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Installed the radio and now the red airbag warning light is permanently lit on my dash cluster."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> The Passenger Airbag Deactivation indicator was unplugged with the battery on. Always disconnect the battery first, transfer the indicator, and clear DTC B11D8 with FORScan if tripped.
-          </div>
-        </div>
-
-        <!-- 9 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">9. CONSOLE USB DEAD</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"The factory dual USB ports under the sliding console door stopped working after removing Sync."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> The factory hub uses a mini-USB plug into the APIM. Use a Ford Mini-USB to USB-A adapter (Metra AX-FDUSBA) into the radio's 4-pin USB lead to retain the illuminated console hub.
-          </div>
-        </div>
-
-        <!-- 10 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">10. GPS SIGNAL DRIFT</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Google Maps keeps saying 'Searching for GPS' or places my truck in a cow pasture two miles away."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> The generic magnetic puck gets shielded by solar glass. Use a $7 Fakra C (Blue) to SMA adapter to plug directly into the Ford factory amplified roof GPS antenna!
-          </div>
-        </div>
-
-        <!-- 11 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">11. NIGHT DIMMER BLACKOUT</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Screen looked great during the day, but the second I turned my headlights on at dusk, the display went pitch black."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> Default night backlight slider is at 0%. Go to Settings &rarr; Display: set Day to 85% and Night to 40% (never below 30%).
-          </div>
-        </div>
-
-        <!-- 12 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">12. HEATED SEATS GONE</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"I have a Lariat with heated and cooled seats, but the icons disappeared on the new touchscreen."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> In Factory Settings (<code>8888</code>) &rarr; CANbus Setup &rarr; change profile from Base/XLT to <strong>High Trim / Dual Auto AC with Heated/Cooled Seats</strong>.
-          </div>
-        </div>
-
-        <!-- 13 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">13. BEZEL GAPS &amp; CREAKS</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"The bezel sticks out 1/8 inch at the bottom corners and buzzes over every damn highway bump."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> Wiring is trapped behind the heatsink. Route the CANbox and heavy harness down into the lower ACM cavity, and wrap all connectors in Tesa cloth tape.
-          </div>
-        </div>
-
-        <!-- 14 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">14. STICKY HAZARD SWITCH</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"The hazard and traction buttons bind and stick when pressed into the new bezel."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> Do not overtighten the T20 Torx screws on the switch bracket; hand-snug only. Lightly shave any plastic mold flash on the cutout edges with a utility razor.
-          </div>
-        </div>
-
-        <!-- 15 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">15. AM/FM RADIO STATIC</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Lost all my local FM stations, only gets static on the highway."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> The Ford roof antenna booster has no power. Splice the blue wire from the antenna adapter into the radio's Blue/White <code>AMP-CON</code> wire to provide +12V phantom power.
-          </div>
-        </div>
-
-        <!-- 16 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">16. CAMERA NO SIGNAL</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Put truck in reverse, screen switches but shows black screen with yellow triangle."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> In Factory Settings (<code>8888</code>) &rarr; Reverse Settings &rarr; switch from AHD 720p to <strong>NTSC / CVBS</strong>, and verify the in-line 12V-to-6V regulator outputs +6V DC.
-          </div>
-        </div>
-
-        <!-- 17 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">17. CARPLAY DROPOUTS</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
-          </div>
-          <div class="fail-quote">"Wireless CarPlay drops connection every 15 minutes while driving down the road."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> On your iPhone, go to Bluetooth and <strong>FORGET "SYNC"</strong> so your phone doesn't fight two connections. In the radio's hotspot settings, set the Wi-Fi band to <strong>5.0 GHz</strong>.
-          </div>
-        </div>
-
-        <!-- 18 -->
-        <div class="fail-card">
-          <div class="fail-top">
-            <span class="fail-title">18. 2GB RAM STUTTER</span>
-            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★★☆☆</span>
-          </div>
-          <div class="fail-quote">"Maps and Spotify together cause slight lag and stutter when navigating."</div>
-          <div class="fail-solution">
-            <strong>Brandon's Fix:</strong> Unlock Developer Options (tap Build Number 7x). Set <strong>Background Process Limit</strong> to <em>"At most 3 processes"</em>, and set all 3 Animation Scales to <strong>0.5x</strong>.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- iPhone & Wireless CarPlay Master Setup (Purple & Green) -->
-    <div class="card" style="border-color: var(--hulk-purple);">
-      <div class="card-hulk-title" style="color: var(--hulk-purple-glow);">
-        <span>📱 BRANDON'S IPHONE &amp; WIRELESS CARPLAY MASTER SETUP</span>
-      </div>
-      <p style="color: #cbd5e1; margin-bottom: 16px;">
-        Brandon uses an iPhone, which gives him the fastest in-cab performance. Follow these 4 rules for zero dropouts:
-      </p>
-      <div class="grid-cards">
-        <div class="feature-card">
-          <div class="feature-tag" style="color: var(--hulk-purple-glow);">STEP 1: PURGE OLD SYNC LIKE A BAD EX</div>
-          <div class="feature-name">Forget Ford SYNC on iPhone</div>
-          <p style="font-size: 0.88rem; color: #cbd5e1;">Go to iPhone Settings &rarr; Bluetooth &rarr; tap (i) next to "SYNC" &rarr; <strong>Forget This Device</strong>. If your phone tries to handshake with both, audio stutters like dial-up internet.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-tag" style="color: var(--hulk-green-glow);">STEP 2: 5.0 GHz OR GTFO</div>
-          <div class="feature-name">Switch Wi-Fi to 5.0 GHz</div>
-          <p style="font-size: 0.88rem; color: #cbd5e1;">In Android radio settings &rarr; Network &rarr; Hotspot &rarr; change AP Band from 2.4 GHz to <strong>5.0 GHz</strong> for 4x data speed and butter-smooth 60fps Apple Maps scrolling.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-tag" style="color: var(--pure-white);">STEP 3: INITIAL PAIR &amp; ALWAYS ALLOW</div>
-          <div class="feature-name">Pair Bluetooth &amp; Accept</div>
-          <p style="font-size: 0.88rem; color: #cbd5e1;">Pair iPhone with radio Bluetooth. When iPhone prompts with <em>"Use CarPlay with this device?"</em>, tap <strong>ALWAYS ALLOW</strong> so it connects automatically every time you hop in.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-tag" style="color: #f87171;">STEP 4: STEERING WHEEL SIRI</div>
-          <div class="feature-name">One-Touch Voice Control</div>
-          <p style="font-size: 0.88rem; color: #cbd5e1;">Hold the steering wheel voice button for 1.5 seconds. Siri triggers instantly over the cab speakers for hands-free navigation, calling, texting, and music selection.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Live OBD-II Engine Gauges -->
-    <div class="card" style="border-color: var(--hulk-green);">
-      <div class="card-hulk-title" style="color: var(--hulk-green-glow);">
-        <span>🏎️ OBD-II LIVE ENGINE DIAGNOSTICS &amp; CUSTOM RACE GAUGES</span>
-      </div>
-      <p style="color: #cbd5e1; margin-bottom: 16px;">
-        Can Brandon read engine trouble codes and monitor transmission temps for towing? <strong>HELL YES.</strong> Plug a $25 adapter into his OBD-II port to turn this 12.1" vertical screen into a badass digital race dash:
-      </p>
-
-      <div class="hero-flex">
-        <div>
-          <div class="painter-drip" style="border-left-color: var(--hulk-green);">
-            <div class="painter-heading" style="color: var(--hulk-green-glow); font-size: 1.25rem;">🔌 2-MINUTE HARDWARE SETUP</div>
-            <p style="color: #cbd5e1; font-size: 0.92rem;">
-              1. Buy a <strong>Veepeak OBDCheck BLE</strong> (Bluetooth) or <strong>OBDLink EX</strong> (USB) on Amazon (~$25).<br>
-              2. Plug it into the OBD-II diagnostic port located directly under the steering column by Brandon's left knee.<br>
-              3. Pair it to the Android radio via Bluetooth or plug the USB cable into the glovebox lead. Done.
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <div class="painter-drip" style="border-left-color: var(--hulk-purple);">
-            <div class="painter-heading" style="color: var(--hulk-purple-glow); font-size: 1.25rem;">📲 THE BEST APPS TO DOWNLOAD</div>
-            <p style="color: #cbd5e1; font-size: 0.92rem;">
-              • <strong>FORScan Lite ($4.99):</strong> The official Ford power tool. Reads proprietary Ford module codes across transmission, ABS, airbag, and 4x4 that generic scanners can't even see!<br>
-              • <strong>Torque Pro ($4.95):</strong> Giant digital gauges on the 12.1" vertical screen for Boost, Transmission Temp (crucial for towing), Coolant Temp, and clears Check Engine lights with one tap.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- House Painter Pro-Tip 2 -->
-    <div class="painter-drip">
-      <div class="painter-heading">
-        <span>🎨 BRANDON'S PAINTER CODE // RULE #2: THE BENCH TEST IS YOUR PRIMER COAT</span>
-      </div>
-      <p style="color: #cbd5e1; font-size: 1rem;">
-        You never slap high-gloss finish enamel on raw drywall without a primer coat first, and <strong>you NEVER snap a radio bezel into the dashboard before running a bench test</strong>. 
-        Reconnect the battery, turn the key to ON, and test the radio, backup camera, AC fan, and steering buttons right on the bench. It takes 2 minutes to fix a loose plug now, but takes 30 minutes of cursing to rip the dash apart again if you already snapped it in!
-      </p>
-    </div>
-
-    <!-- Step-by-Step Garage Manual with Persistent Checkboxes -->
-    <div class="card" id="section-steps">
+    
+    <!-- ==================== PHASE 2: STEP-BY-STEP PHYSICAL INSTALLATION ==================== -->
+<div class="card" id="section-steps">
       <div class="card-hulk-title">
         <span>🛠️ BRANDON'S STEP-BY-STEP GARAGE MANUAL (2018 FORD F-150)</span>
       </div>
@@ -1735,288 +1432,41 @@
       </div>
     </div>
 
-    <!-- Interactive Diagnostic Workbench -->
-    <div class="card" id="section-diag">
-      <div class="card-hulk-title">
-        <span>🔧 INTERACTIVE DIAGNOSTIC WORKBENCH (10 MASTER TABS)</span>
-      </div>
-      
-      <div class="tab-swipe-hint">👈 SWIPE TABS HORIZONTALLY (10 DIAGNOSTIC LABS) 👉</div>
-      <div class="tab-row">
-        <button class="tab-trigger active" onclick="activateTab('tab-climate')">❄️ Climate / AC</button>
-        <button class="tab-trigger" onclick="activateTab('tab-camera')">📷 Reverse Camera</button>
-        <button class="tab-trigger" onclick="activateTab('tab-audio')">🔊 Audio &amp; B&amp;O</button>
-        <button class="tab-trigger" onclick="activateTab('tab-mic')">🎙️ Mic &amp; Echo</button>
-        <button class="tab-trigger" onclick="activateTab('tab-battery')">🔋 Battery Drain</button>
-        <button class="tab-trigger" onclick="activateTab('tab-carplay')">📱 CarPlay / Zlink</button>
-        <button class="tab-trigger" onclick="activateTab('tab-airbag')">⚠️ Airbag SRS</button>
-        <button class="tab-trigger" onclick="activateTab('tab-usb')">🔌 Console USB</button>
-        <button class="tab-trigger" onclick="activateTab('tab-gps')">🛰️ Roof GPS</button>
-        <button class="tab-trigger" onclick="activateTab('tab-dimmer')">💡 Night Dimmer</button>
-      </div>
-
-      <!-- Tab: Climate -->
-      <div id="tab-climate" class="tab-content active">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: AC/Heater Not Blowing, Stuck in Celsius, or Defrost Only</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> Missing secondary 6-pin climate sub-harness, interrupted actuator calibration sweep, or CANbus profile mismatch.</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ol style="margin-left: 20px; margin-top: 6px;">
-            <li>Verify the 6-pin white multi-wire plug running from the lower physical button cluster is plugged directly into the radio's secondary climate port.</li>
-            <li>Go to <strong>Settings &rarr; Car Settings &rarr; Factory Settings</strong> (Enter PIN: <code>8888</code>).</li>
-            <li>Select <strong>Canbus Settings</strong> &rarr; Select your CANbox brand (<code>Raise</code> or <code>Hiworld</code>) &rarr; <code>Ford</code> &rarr; <code>F-150</code> &rarr; <code>2015-2018</code>.</li>
-            <li>Select <strong>Manual AC</strong> if your truck had 3 rotary dials, or <strong>Auto AC</strong> if it had digital dual-zone displays.</li>
-            <li>Toggle Temperature Unit from <strong>°C to °F</strong>.</li>
-            <li>Tap <strong>Save &amp; Reboot</strong>. Then turn key to ON (engine OFF) and wait 60 seconds silently for blend doors to calibrate.</li>
-          </ol>
-        </div>
-      </div>
-
-      <!-- Tab: Camera -->
-      <div id="tab-camera" class="tab-content">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Reverse Camera Black Screen / "No Signal" or Double Lines</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> Video standard mismatch (default is AHD 720p, but Ford OEM is NTSC 480i) or voltage missing (OEM camera requires 6V DC).</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ol style="margin-left: 20px; margin-top: 6px;">
-            <li>Enter Factory Settings (PIN: <code>8888</code>) &rarr; <strong>Reverse / Backcar Settings</strong>.</li>
-            <li>Change camera video resolution from <code>AHD 720P</code> to <strong><code>NTSC</code></strong> or <strong><code>CVBS</code></strong>.</li>
-            <li>Toggle <strong>"Parking Guidelines: OFF"</strong> so only the Ford factory dynamic lines display.</li>
-            <li>Ensure the yellow RCA plug is connected to <code>CAM-VIN</code>, NOT <code>AUX-IN</code> or <code>VIDEO-IN</code>.</li>
-            <li>Measure voltage on camera power lead: verify it outputs +6.0V DC when shifted into Reverse.</li>
-          </ol>
-        </div>
-      </div>
-
-      <!-- Tab: Audio -->
-      <div id="tab-audio" class="tab-content">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Total Silence on 2018 B&amp;O Play Audio System</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> 2018 B&amp;O systems do not accept analog speaker signals; audio is carried digitally over an A2B bus from the factory ACM.</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ul style="margin-left: 20px; margin-top: 6px;">
-            <li>If equipped with B&amp;O, keep factory ACM CD player plugged into its harness behind lower dash cavity to drive the A2B bus.</li>
-            <li>In Factory Settings (<code>8888</code>) &rarr; Canbus Setup &rarr; select <code>Ford -> F-150 -> 2015-2018 -> With Amp / B&O</code> so the CANbox sends the digital wake-up packet.</li>
-            <li>For non-B&amp;O base trucks: Ensure the Blue/White <code>AMP-CON</code> wire is connected to trigger the factory audio relay.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Tab: Mic -->
-      <div id="tab-mic" class="tab-content">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Severe Echo &amp; Tunnel Sound During Hands-Free Phone Calls</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> Internal front-panel microphone preamp gain is set too high (15 default), causing cabin acoustic feedback.</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ol style="margin-left: 20px; margin-top: 6px;">
-            <li><strong>Non-destructive first:</strong> Enter Factory Settings (<code>8888</code>) &rarr; Audio/Voice Settings &rarr; reduce <strong>Mic Gain</strong> from <code>15</code> down to <code>6 - 8</code>.</li>
-            <li>Plug in the provided 3.5mm external lapel mic and route it to your sun visor / A-pillar.</li>
-            <li><em>Last-resort hardware mod (only if echo persists):</em> Disassemble front plastic faceplate and snip one leg of the small internal SMD mic capsule labeled <code>MIC</code> on the PCB.</li>
-          </ol>
-        </div>
-      </div>
-
-      <!-- Tab: Battery -->
-      <div id="tab-battery" class="tab-content">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Parasitic Battery Drain (Dead Battery After 2-3 Days)</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> "Auto Sleep" (Fast Boot) mode keeps the CPU in suspend mode and the CANbus box continuously pings the Ford Gateway Module.</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ol style="margin-left: 20px; margin-top: 6px;">
-            <li>Open Android <strong>Settings &rarr; Car Settings &rarr; System Settings</strong>.</li>
-            <li>Find <strong>Shutdown Delay</strong> (or <strong>Sleep Mode</strong>).</li>
-            <li>Change value from <em>"3 Days / Auto Sleep"</em> to <strong><code>0 Minutes / Power Off Immediately</code></strong>.</li>
-            <li>The unit will perform a clean shutdown when the key is removed and driver's door opens, dropping standby drain below 15 mA.</li>
-          </ol>
-        </div>
-      </div>
-
-      <!-- Tab: CarPlay -->
-      <div id="tab-carplay" class="tab-content">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: CarPlay / Android Auto Disconnects or Lag</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> 2.4GHz Wi-Fi congestion or phone trying to connect to the old Ford Sync Bluetooth simultaneously.</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ol style="margin-left: 20px; margin-top: 6px;">
-            <li>On your iPhone, go to Bluetooth settings and <strong>FORGET "SYNC"</strong> completely.</li>
-            <li>In Android radio settings, set the Wi-Fi hotspot band to <strong>5.0 GHz</strong> (instead of 2.4 GHz).</li>
-            <li>In Zlink settings, set Driver Position to Left, and connection mode to Auto.</li>
-          </ol>
-        </div>
-      </div>
-
-      <!-- Tab: Airbag -->
-      <div id="tab-airbag" class="tab-content">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Passenger Airbag Warning Light / SRS Fault (DTC B11D8)</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> Upper hazard switch strip containing Passenger Airbag Deactivation indicator was unplugged while vehicle battery was connected.</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ol style="margin-left: 20px; margin-top: 6px;">
-            <li>Always disconnect the negative battery terminal before unplugging the dash.</li>
-            <li>Ensure the factory airbag indicator module is snapped securely into the new bezel and its plug clicked in firmly before reconnecting the battery.</li>
-            <li><em>If light is already on:</em> Disconnecting the battery will NOT clear SRS codes. Connect an OBDLink EX adapter, open <strong>FORScan</strong> on a laptop, access the <strong>RCM module</strong>, and click <strong>Clear DTCs</strong>.</li>
-          </ol>
-        </div>
-      </div>
-
-      <!-- Tab: USB -->
-      <div id="tab-usb" class="tab-content">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Center Console Factory USB Hub Dead</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> Illuminated dual USB ports in center console plug into OEM Sync APIM via proprietary 4-pin mini-USB cable.</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ol style="margin-left: 20px; margin-top: 6px;">
-            <li>Purchase a <strong>Ford Mini-USB to USB Type-A Retention Adapter</strong> (Metra AX-FDUSBA or Enfig KFU-FD2).</li>
-            <li>Connect the adapter to the factory mini-USB cable previously plugged into the Sync APIM.</li>
-            <li>Plug the standard USB-A end into one of the Incifum unit's rear USB leads. Console ports now handle wired CarPlay, Android Auto, and flash drives!</li>
-          </ol>
-        </div>
-      </div>
-
-      <!-- Tab: GPS -->
-      <div id="tab-gps" class="tab-content">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Weak GPS Navigation Signal / Map Drifting</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> Cheap aftermarket magnetic puck suffers from RF attenuation beneath the F-150 solar windshield.</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ol style="margin-left: 20px; margin-top: 6px;">
-            <li>Order a $7 <strong>Fakra C Female (Blue) to SMA Male</strong> adapter cable from Amazon.</li>
-            <li>Unplug the Ford factory blue Fakra GPS cable from the old Sync display.</li>
-            <li>Connect adapter between factory blue roof lead and gold SMA threaded port on Incifum chassis for instant 3-second satellite locks!</li>
-          </ol>
-        </div>
-      </div>
-
-      <!-- Tab: Dimmer -->
-      <div id="tab-dimmer" class="tab-content">
-        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Screen Goes 100% Pitch Black When Headlights Turn On</h3>
-        <p style="color: #cbd5e1;"><strong>Cause:</strong> Default Topway firmware sets the night backlight slider to 0%.</p>
-        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
-          <strong>Brandon's Step-by-Step Fix:</strong>
-          <ol style="margin-left: 20px; margin-top: 6px;">
-            <li>Turn headlight switch OFF so screen returns to day mode.</li>
-            <li>Go to <strong>Settings &rarr; Display</strong> (or Car Settings &rarr; Display Settings).</li>
-            <li>Set <strong>Day Backlight</strong> to <code>85% - 90%</code>.</li>
-            <li>Set <strong>Night Backlight</strong> to <code>40% - 45%</code> (NEVER set below 30%).</li>
-            <li>In Factory Settings (<code>8888</code>), verify Dimmer Mode is set to <code>CANbus (Auto)</code>.</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-
-    <!-- Factory PIN Codes Cheat Sheet -->
     
-    <!-- NEW: Community War Room & Multi-Platform Intel -->
-    <div class="card" id="section-community" style="border: 2px solid var(--hulk-green); box-shadow: 0 0 25px rgba(0, 230, 118, 0.15);">
-      <div class="card-hulk-title" style="color: var(--hulk-green-glow);">
-        <span>🌐 FIELD INTEL & COMMUNITY WAR ROOM (REDDIT • YOUTUBE • F150FORUM • XDA)</span>
+    <!-- ==================== PHASE 3: FIRST-BOOT & CONNECTIVITY SETUP ==================== -->
+<div class="card" style="border-color: var(--hulk-purple);">
+      <div class="card-hulk-title" style="color: var(--hulk-purple-glow);">
+        <span>📱 BRANDON'S IPHONE &amp; WIRELESS CARPLAY MASTER SETUP</span>
       </div>
-      <p style="color: #cbd5e1; margin-bottom: 1.2rem; font-size: 0.95rem; line-height: 1.5;">
-        Real-world teardowns, long-term road tests, and installer traps documented by actual 2015–2020 F-150 owners across Reddit, F150Forum.com, YouTube stereo fabricators, and XDA Developers. These pro-tips eliminate the quirks that factory manuals never mention:
+      <p style="color: #cbd5e1; margin-bottom: 16px;">
+        Brandon uses an iPhone, which gives him the fastest in-cab performance. Follow these 4 rules for zero dropouts:
       </p>
-
-      <div class="community-grid">
-        
-        <!-- Trap 1: AC Vent Mic Echo -->
-        <div class="community-card">
-          <div class="community-card-header">
-            <span class="community-badge badge-warn">🎙️ CALL QUALITY</span>
-            <span class="community-source">Reddit r/CarAV &amp; F150Forum</span>
-          </div>
-          <h4 class="community-card-title">The "AC Vent Mic" Echo Trap</h4>
-          <div class="community-card-body">
-            <p><strong>The Trap:</strong> The radio faceplate has a tiny built-in pinhole mic right next to the driver's AC vent. When air blows above setting 2, callers hear deafening rushing wind and echo.</p>
-            <div class="community-fix-box">
-              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
-              <p>Plug the included 3.5mm external lavalier microphone into the <code>MIC-IN</code> harness jack. Route the thin wire under the dash, up behind the driver's A-pillar weatherstripping, and clip it to the headliner above Brandon's sun visor. In Android Sound Settings, set microphone input to <em>External Priority</em>. Call clarity becomes crystal clear at 75 MPH.</p>
-            </div>
-          </div>
+      <div class="grid-cards">
+        <div class="feature-card">
+          <div class="feature-tag" style="color: var(--hulk-purple-glow);">STEP 1: PURGE OLD SYNC LIKE A BAD EX</div>
+          <div class="feature-name">Forget Ford SYNC on iPhone</div>
+          <p style="font-size: 0.88rem; color: #cbd5e1;">Go to iPhone Settings &rarr; Bluetooth &rarr; tap (i) next to "SYNC" &rarr; <strong>Forget This Device</strong>. If your phone tries to handshake with both, audio stutters like dial-up internet.</p>
         </div>
-
-        <!-- Trap 2: Parasitic Battery Drain -->
-        <div class="community-card">
-          <div class="community-card-header">
-            <span class="community-badge badge-alert">🔋 BATTERY GUARD</span>
-            <span class="community-source">Reddit r/f150 &amp; XDA</span>
-          </div>
-          <h4 class="community-card-title">CANbus Sleep &amp; Standby Battery Drain</h4>
-          <div class="community-card-body">
-            <p><strong>The Trap:</strong> If the radio is set to "Instant Fast Boot / Never Sleep", certain CANbus decoders continue to ping the truck's MS-CAN network after the key is removed, drawing 150mA–300mA and flattening the truck battery after a 3-day weekend.</p>
-            <div class="community-fix-box">
-              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
-              <p>Open <strong>Factory Settings</strong> (PIN <code>126</code> or <code>3368</code>) → <strong>Power / Standby Setting</strong>. Configure <em>Auto Sleep Timeout</em> to <strong>24 Hours</strong> or <strong>Full Cold Shutdown</strong>. When Brandon leaves the truck parked for days, the unit cleanly powers off completely, preserving 100% of the Ford AGM battery.</p>
-            </div>
-          </div>
+        <div class="feature-card">
+          <div class="feature-tag" style="color: var(--hulk-green-glow);">STEP 2: 5.0 GHz OR GTFO</div>
+          <div class="feature-name">Switch Wi-Fi to 5.0 GHz</div>
+          <p style="font-size: 0.88rem; color: #cbd5e1;">In Android radio settings &rarr; Network &rarr; Hotspot &rarr; change AP Band from 2.4 GHz to <strong>5.0 GHz</strong> for 4x data speed and butter-smooth 60fps Apple Maps scrolling.</p>
         </div>
-
-        <!-- Trap 3: Brake Pedal Reverse Camera Flicker -->
-        <div class="community-card">
-          <div class="community-card-header">
-            <span class="community-badge badge-fix">📷 BACKUP CAM</span>
-            <span class="community-source">YouTube Stereo Fabricators</span>
-          </div>
-          <h4 class="community-card-title">Brake-Pedal Camera Static &amp; Ground Loops</h4>
-          <div class="community-card-body">
-            <p><strong>The Trap:</strong> Ford third brake lights and tail lights pulse with high-frequency PWM voltage. If the yellow camera RCA barrel touches the bare steel dash framework, pressing the brake pedal causes the screen to flicker with horizontal lines or momentarily black out.</p>
-            <div class="community-fix-box">
-              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
-              <p>Wrap the yellow female-to-male RCA connection in 3 tight layers of 3M electrical tape or slide heat shrink tubing over it. Isolating the RCA metal barrel from chassis metal completely eliminates brake-induced video interference.</p>
-            </div>
-          </div>
+        <div class="feature-card">
+          <div class="feature-tag" style="color: var(--pure-white);">STEP 3: INITIAL PAIR &amp; ALWAYS ALLOW</div>
+          <div class="feature-name">Pair Bluetooth &amp; Accept</div>
+          <p style="font-size: 0.88rem; color: #cbd5e1;">Pair iPhone with radio Bluetooth. When iPhone prompts with <em>"Use CarPlay with this device?"</em>, tap <strong>ALWAYS ALLOW</strong> so it connects automatically every time you hop in.</p>
         </div>
-
-        <!-- Trap 4: Sun-Baked OEM Vent Clips -->
-        <div class="community-card">
-          <div class="community-card-header">
-            <span class="community-badge badge-tip">🔥 DASH FABRICATION</span>
-            <span class="community-source">F150Forum Teardowns</span>
-          </div>
-          <h4 class="community-card-title">Brittle Sun-Baked AC Vent &amp; Hazard Clips</h4>
-          <div class="community-card-body">
-            <p><strong>The Trap:</strong> 2018 F-150 plastic louvers endure heavy sun baking through the windshield. Cold prying on the OEM hazard/traction switch or vent retaining clips snaps them instantly, making buttons sink into the new bezel.</p>
-            <div class="community-fix-box">
-              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
-              <p>Warm the backside retaining tabs with a hair dryer on warm for 40 seconds before prying. The softened plastic flexes smoothly without cracking, locking tight into the new 12.1" bezel with factory-firm tactile clicks.</p>
-            </div>
-          </div>
+        <div class="feature-card">
+          <div class="feature-tag" style="color: #f87171;">STEP 4: STEERING WHEEL SIRI</div>
+          <div class="feature-name">One-Touch Voice Control</div>
+          <p style="font-size: 0.88rem; color: #cbd5e1;">Hold the steering wheel voice button for 1.5 seconds. Siri triggers instantly over the cab speakers for hands-free navigation, calling, texting, and music selection.</p>
         </div>
-
-        <!-- Trap 5: USB Cable Staging -->
-        <div class="community-card">
-          <div class="community-card-header">
-            <span class="community-badge badge-pro">🔌 CABIN ROUTING</span>
-            <span class="community-source">Installer Guild Consensus</span>
-          </div>
-          <h4 class="community-card-title">Never Trap Rear USBs Behind the Tablet</h4>
-          <div class="community-card-body">
-            <p><strong>The Trap:</strong> Tucking the two rear USB extension dongles into the void behind the screen. If Brandon ever wants to update offline maps, plug in a flash drive of FLAC music, or use a hardwire iPhone cable, he would have to pull the dash apart again.</p>
-            <div class="community-fix-box">
-              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
-              <p>Route USB #1 through the factory opening into the upper glove box (ideal for high-capacity music drives / firmware updates), and route USB #2 down into the center console sliding cubby for Brandon's passenger to plug in fast-charging devices.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Trap 6: Polarized Sunglasses & Midday Glare -->
-        <div class="community-card">
-          <div class="community-card-header">
-            <span class="community-badge badge-tip">🕶️ OPTICAL CLARITY</span>
-            <span class="community-source">eBay &amp; Reddit Field Reviews</span>
-          </div>
-          <h4 class="community-card-title">Polarized Sunglasses &amp; High-Noon Glare</h4>
-          <div class="community-card-body">
-            <p><strong>The Trap:</strong> Because the 12.1" upright glass screen sits vertically, direct midday sun through the windshield creates glass reflections, and polarized sunglasses can cause dark rainbow prism distortion.</p>
-            <div class="community-fix-box">
-              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
-              <p>Apply an inexpensive matte anti-glare screen protector (standard 12.1" tablet or universal matte film). It diffuses overhead sunlight into a soft readable glow and allows polarized lenses to see crisp navigation from any driving angle.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
 
-    <div class="card">
+    <!-- Live OBD-II Engine Gauges -->
+    <div class="card" id="section-passcodes">
       <div class="card-hulk-title">
         <span>🔐 FACTORY SECRET PASSCODE DIRECTORY</span>
       </div>
@@ -2365,7 +1815,565 @@
   </script>
 
   
-  <!-- Pro Craftsman Footer with Live View Counter -->
+  
+    <!-- ==================== PHASE 4: THE MASTER TROUBLESHOOTING & FIXES HUB ==================== -->
+<!-- NEW: Community War Room & Multi-Platform Intel -->
+    <div class="card" id="section-community" style="border: 2px solid var(--hulk-green); box-shadow: 0 0 25px rgba(0, 230, 118, 0.15);">
+      <div class="card-hulk-title" style="color: var(--hulk-green-glow);">
+        <span>🌐 FIELD INTEL & COMMUNITY WAR ROOM (REDDIT • YOUTUBE • F150FORUM • XDA)</span>
+      </div>
+      <p style="color: #cbd5e1; margin-bottom: 1.2rem; font-size: 0.95rem; line-height: 1.5;">
+        Real-world teardowns, long-term road tests, and installer traps documented by actual 2015–2020 F-150 owners across Reddit, F150Forum.com, YouTube stereo fabricators, and XDA Developers. These pro-tips eliminate the quirks that factory manuals never mention:
+      </p>
+
+      <div class="community-grid">
+        
+        <!-- Trap 1: AC Vent Mic Echo -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-warn">🎙️ CALL QUALITY</span>
+            <span class="community-source">Reddit r/CarAV &amp; F150Forum</span>
+          </div>
+          <h4 class="community-card-title">The "AC Vent Mic" Echo Trap</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> The radio faceplate has a tiny built-in pinhole mic right next to the driver's AC vent. When air blows above setting 2, callers hear deafening rushing wind and echo.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Plug the included 3.5mm external lavalier microphone into the <code>MIC-IN</code> harness jack. Route the thin wire under the dash, up behind the driver's A-pillar weatherstripping, and clip it to the headliner above Brandon's sun visor. In Android Sound Settings, set microphone input to <em>External Priority</em>. Call clarity becomes crystal clear at 75 MPH.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 2: Parasitic Battery Drain -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-alert">🔋 BATTERY GUARD</span>
+            <span class="community-source">Reddit r/f150 &amp; XDA</span>
+          </div>
+          <h4 class="community-card-title">CANbus Sleep &amp; Standby Battery Drain</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> If the radio is set to "Instant Fast Boot / Never Sleep", certain CANbus decoders continue to ping the truck's MS-CAN network after the key is removed, drawing 150mA–300mA and flattening the truck battery after a 3-day weekend.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Open <strong>Factory Settings</strong> (PIN <code>126</code> or <code>3368</code>) → <strong>Power / Standby Setting</strong>. Configure <em>Auto Sleep Timeout</em> to <strong>24 Hours</strong> or <strong>Full Cold Shutdown</strong>. When Brandon leaves the truck parked for days, the unit cleanly powers off completely, preserving 100% of the Ford AGM battery.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 3: Brake Pedal Reverse Camera Flicker -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-fix">📷 BACKUP CAM</span>
+            <span class="community-source">YouTube Stereo Fabricators</span>
+          </div>
+          <h4 class="community-card-title">Brake-Pedal Camera Static &amp; Ground Loops</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> Ford third brake lights and tail lights pulse with high-frequency PWM voltage. If the yellow camera RCA barrel touches the bare steel dash framework, pressing the brake pedal causes the screen to flicker with horizontal lines or momentarily black out.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Wrap the yellow female-to-male RCA connection in 3 tight layers of 3M electrical tape or slide heat shrink tubing over it. Isolating the RCA metal barrel from chassis metal completely eliminates brake-induced video interference.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 4: Sun-Baked OEM Vent Clips -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-tip">🔥 DASH FABRICATION</span>
+            <span class="community-source">F150Forum Teardowns</span>
+          </div>
+          <h4 class="community-card-title">Brittle Sun-Baked AC Vent &amp; Hazard Clips</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> 2018 F-150 plastic louvers endure heavy sun baking through the windshield. Cold prying on the OEM hazard/traction switch or vent retaining clips snaps them instantly, making buttons sink into the new bezel.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Warm the backside retaining tabs with a hair dryer on warm for 40 seconds before prying. The softened plastic flexes smoothly without cracking, locking tight into the new 12.1" bezel with factory-firm tactile clicks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 5: USB Cable Staging -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-pro">🔌 CABIN ROUTING</span>
+            <span class="community-source">Installer Guild Consensus</span>
+          </div>
+          <h4 class="community-card-title">Never Trap Rear USBs Behind the Tablet</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> Tucking the two rear USB extension dongles into the void behind the screen. If Brandon ever wants to update offline maps, plug in a flash drive of FLAC music, or use a hardwire iPhone cable, he would have to pull the dash apart again.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Route USB #1 through the factory opening into the upper glove box (ideal for high-capacity music drives / firmware updates), and route USB #2 down into the center console sliding cubby for Brandon's passenger to plug in fast-charging devices.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 6: Polarized Sunglasses & Midday Glare -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-tip">🕶️ OPTICAL CLARITY</span>
+            <span class="community-source">eBay &amp; Reddit Field Reviews</span>
+          </div>
+          <h4 class="community-card-title">Polarized Sunglasses &amp; High-Noon Glare</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> Because the 12.1" upright glass screen sits vertically, direct midday sun through the windshield creates glass reflections, and polarized sunglasses can cause dark rainbow prism distortion.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Apply an inexpensive matte anti-glare screen protector (standard 12.1" tablet or universal matte film). It diffuses overhead sunlight into a soft readable glow and allows polarized lenses to see crisp navigation from any driving angle.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 18-Point Review Matrix -->
+    <div class="card" id="section-faults" style="border-color: var(--danger-red);">
+      <div class="card-hulk-title" style="color: #fca5a5;">
+        <span>💥 ALL 18 AMAZON &amp; FORUM FAILURE MODES CRUSHED</span>
+      </div>
+      <p style="color: #cbd5e1; font-size: 0.98rem;">
+        Amazon ratings for ASIN <strong>B0D8J85QB4</strong> sit at <strong>3.7 out of 5 stars</strong> across 230+ ratings. The negative reviews are from amateurs who didn't have a plan. Brandon has the cheat codes for all 18:
+      </p>
+
+      <div class="fail-grid">
+        <!-- 1 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">1. AC STUCK IN CELSIUS</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Looks good, but temp is stuck in Celsius and buttons don't turn on fan. Total garbage."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> Plug the white 6-pin secondary climate cable directly into the screen chassis port. Then in Factory Settings (<code>8888</code>) &rarr; CANbus Setup &rarr; toggle temperature from °C to °F.
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">2. STUCK ON DEFROST ONLY</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Air only blows out of windshield defrost vents. Dash and floor vents are dead."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> Interrupted blend door sweep. Reconnect battery, turn key to ON (engine OFF), and <strong>wait 60 seconds silently</strong> without touching dials. The actuators will self-calibrate.
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">3. REVERSED STEERING SEEK</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Volume works, but the Next Track button skips backwards and Previous skips forward."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> In Factory Settings (<code>8888</code>) &rarr; Protocol Keys &rarr; toggle <em>"Swap Seek+/Seek-"</em> or select the 2018 Ford CANbus firmware profile.
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">4. ZERO SOUND ON B&amp;O</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Plugged into my 2018 Lariat, screen turned on, but ZERO sound came out of any speaker."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> 2018 introduced Ford's digital A2B audio bus. The factory ACM CD player must stay connected in the dash cavity to drive the A2B bus, and the CANbox must be set to "With Amp / B&amp;O".
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">5. SEVERE CALL ECHO</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Callers hear themselves talking twice with an awful screeching echo like I'm taking a dump in an empty cathedral."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> Step 1: In Factory Settings (<code>8888</code>), reduce Mic Gain from 15 down to 6–8. Step 2: Mount external lapel mic at driver A-pillar.
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">6. DOUBLE GUIDELINES</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★★☆☆</span>
+          </div>
+          <div class="fail-quote">"Backup camera works, but there are two sets of grid lines overlapping each other and looking like drunk road striping."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> Ford's OEM camera has hardware lines. Go to Android Settings &rarr; Reverse / Backcar Settings &rarr; toggle <strong>"Guide Lines: OFF"</strong>.
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">7. DEAD TRUCK BATTERY</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Left my truck parked from Friday to Monday morning and the battery was drained stone dead."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> "Auto Sleep / Fast Boot" pulls 350mA+ and wakes the Ford Gateway Module. Go to Car Settings &rarr; System &rarr; Shutdown Delay &rarr; set to <strong>0 Minutes (Full Shutdown)</strong>.
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">8. AIRBAG SRS LIGHT</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Installed the radio and now the red airbag warning light is permanently lit on my dash cluster."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> The Passenger Airbag Deactivation indicator was unplugged with the battery on. Always disconnect the battery first, transfer the indicator, and clear DTC B11D8 with FORScan if tripped.
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">9. CONSOLE USB DEAD</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"The factory dual USB ports under the sliding console door stopped working after removing Sync."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> The factory hub uses a mini-USB plug into the APIM. Use a Ford Mini-USB to USB-A adapter (Metra AX-FDUSBA) into the radio's 4-pin USB lead to retain the illuminated console hub.
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">10. GPS SIGNAL DRIFT</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Google Maps keeps saying 'Searching for GPS' or places my truck in a cow pasture two miles away."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> The generic magnetic puck gets shielded by solar glass. Use a $7 Fakra C (Blue) to SMA adapter to plug directly into the Ford factory amplified roof GPS antenna!
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">11. NIGHT DIMMER BLACKOUT</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Screen looked great during the day, but the second I turned my headlights on at dusk, the display went pitch black."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> Default night backlight slider is at 0%. Go to Settings &rarr; Display: set Day to 85% and Night to 40% (never below 30%).
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">12. HEATED SEATS GONE</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"I have a Lariat with heated and cooled seats, but the icons disappeared on the new touchscreen."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> In Factory Settings (<code>8888</code>) &rarr; CANbus Setup &rarr; change profile from Base/XLT to <strong>High Trim / Dual Auto AC with Heated/Cooled Seats</strong>.
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">13. BEZEL GAPS &amp; CREAKS</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"The bezel sticks out 1/8 inch at the bottom corners and buzzes over every damn highway bump."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> Wiring is trapped behind the heatsink. Route the CANbox and heavy harness down into the lower ACM cavity, and wrap all connectors in Tesa cloth tape.
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">14. STICKY HAZARD SWITCH</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"The hazard and traction buttons bind and stick when pressed into the new bezel."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> Do not overtighten the T20 Torx screws on the switch bracket; hand-snug only. Lightly shave any plastic mold flash on the cutout edges with a utility razor.
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">15. AM/FM RADIO STATIC</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Lost all my local FM stations, only gets static on the highway."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> The Ford roof antenna booster has no power. Splice the blue wire from the antenna adapter into the radio's Blue/White <code>AMP-CON</code> wire to provide +12V phantom power.
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">16. CAMERA NO SIGNAL</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★☆☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Put truck in reverse, screen switches but shows black screen with yellow triangle."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> In Factory Settings (<code>8888</code>) &rarr; Reverse Settings &rarr; switch from AHD 720p to <strong>NTSC / CVBS</strong>, and verify the in-line 12V-to-6V regulator outputs +6V DC.
+          </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">17. CARPLAY DROPOUTS</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★☆☆☆</span>
+          </div>
+          <div class="fail-quote">"Wireless CarPlay drops connection every 15 minutes while driving down the road."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> On your iPhone, go to Bluetooth and <strong>FORGET "SYNC"</strong> so your phone doesn't fight two connections. In the radio's hotspot settings, set the Wi-Fi band to <strong>5.0 GHz</strong>.
+          </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="fail-card">
+          <div class="fail-top">
+            <span class="fail-title">18. 2GB RAM STUTTER</span>
+            <span class="comic-pill pill-purple" style="font-size: 0.72rem;">★★★☆☆</span>
+          </div>
+          <div class="fail-quote">"Maps and Spotify together cause slight lag and stutter when navigating."</div>
+          <div class="fail-solution">
+            <strong>Brandon's Fix:</strong> Unlock Developer Options (tap Build Number 7x). Set <strong>Background Process Limit</strong> to <em>"At most 3 processes"</em>, and set all 3 Animation Scales to <strong>0.5x</strong>.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- iPhone & Wireless CarPlay Master Setup (Purple & Green) -->
+    <!-- Interactive Diagnostic Workbench -->
+    <div class="card" id="section-diag">
+      <div class="card-hulk-title">
+        <span>🔧 INTERACTIVE DIAGNOSTIC WORKBENCH (10 MASTER TABS)</span>
+      </div>
+      
+      <div class="tab-swipe-hint">👈 SWIPE TABS HORIZONTALLY (10 DIAGNOSTIC LABS) 👉</div>
+      <div class="tab-row">
+        <button class="tab-trigger active" onclick="activateTab('tab-climate')">❄️ Climate / AC</button>
+        <button class="tab-trigger" onclick="activateTab('tab-camera')">📷 Reverse Camera</button>
+        <button class="tab-trigger" onclick="activateTab('tab-audio')">🔊 Audio &amp; B&amp;O</button>
+        <button class="tab-trigger" onclick="activateTab('tab-mic')">🎙️ Mic &amp; Echo</button>
+        <button class="tab-trigger" onclick="activateTab('tab-battery')">🔋 Battery Drain</button>
+        <button class="tab-trigger" onclick="activateTab('tab-carplay')">📱 CarPlay / Zlink</button>
+        <button class="tab-trigger" onclick="activateTab('tab-airbag')">⚠️ Airbag SRS</button>
+        <button class="tab-trigger" onclick="activateTab('tab-usb')">🔌 Console USB</button>
+        <button class="tab-trigger" onclick="activateTab('tab-gps')">🛰️ Roof GPS</button>
+        <button class="tab-trigger" onclick="activateTab('tab-dimmer')">💡 Night Dimmer</button>
+      </div>
+
+      <!-- Tab: Climate -->
+      <div id="tab-climate" class="tab-content active">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: AC/Heater Not Blowing, Stuck in Celsius, or Defrost Only</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> Missing secondary 6-pin climate sub-harness, interrupted actuator calibration sweep, or CANbus profile mismatch.</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ol style="margin-left: 20px; margin-top: 6px;">
+            <li>Verify the 6-pin white multi-wire plug running from the lower physical button cluster is plugged directly into the radio's secondary climate port.</li>
+            <li>Go to <strong>Settings &rarr; Car Settings &rarr; Factory Settings</strong> (Enter PIN: <code>8888</code>).</li>
+            <li>Select <strong>Canbus Settings</strong> &rarr; Select your CANbox brand (<code>Raise</code> or <code>Hiworld</code>) &rarr; <code>Ford</code> &rarr; <code>F-150</code> &rarr; <code>2015-2018</code>.</li>
+            <li>Select <strong>Manual AC</strong> if your truck had 3 rotary dials, or <strong>Auto AC</strong> if it had digital dual-zone displays.</li>
+            <li>Toggle Temperature Unit from <strong>°C to °F</strong>.</li>
+            <li>Tap <strong>Save &amp; Reboot</strong>. Then turn key to ON (engine OFF) and wait 60 seconds silently for blend doors to calibrate.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Tab: Camera -->
+      <div id="tab-camera" class="tab-content">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Reverse Camera Black Screen / "No Signal" or Double Lines</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> Video standard mismatch (default is AHD 720p, but Ford OEM is NTSC 480i) or voltage missing (OEM camera requires 6V DC).</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ol style="margin-left: 20px; margin-top: 6px;">
+            <li>Enter Factory Settings (PIN: <code>8888</code>) &rarr; <strong>Reverse / Backcar Settings</strong>.</li>
+            <li>Change camera video resolution from <code>AHD 720P</code> to <strong><code>NTSC</code></strong> or <strong><code>CVBS</code></strong>.</li>
+            <li>Toggle <strong>"Parking Guidelines: OFF"</strong> so only the Ford factory dynamic lines display.</li>
+            <li>Ensure the yellow RCA plug is connected to <code>CAM-VIN</code>, NOT <code>AUX-IN</code> or <code>VIDEO-IN</code>.</li>
+            <li>Measure voltage on camera power lead: verify it outputs +6.0V DC when shifted into Reverse.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Tab: Audio -->
+      <div id="tab-audio" class="tab-content">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Total Silence on 2018 B&amp;O Play Audio System</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> 2018 B&amp;O systems do not accept analog speaker signals; audio is carried digitally over an A2B bus from the factory ACM.</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ul style="margin-left: 20px; margin-top: 6px;">
+            <li>If equipped with B&amp;O, keep factory ACM CD player plugged into its harness behind lower dash cavity to drive the A2B bus.</li>
+            <li>In Factory Settings (<code>8888</code>) &rarr; Canbus Setup &rarr; select <code>Ford -> F-150 -> 2015-2018 -> With Amp / B&O</code> so the CANbox sends the digital wake-up packet.</li>
+            <li>For non-B&amp;O base trucks: Ensure the Blue/White <code>AMP-CON</code> wire is connected to trigger the factory audio relay.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Tab: Mic -->
+      <div id="tab-mic" class="tab-content">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Severe Echo &amp; Tunnel Sound During Hands-Free Phone Calls</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> Internal front-panel microphone preamp gain is set too high (15 default), causing cabin acoustic feedback.</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ol style="margin-left: 20px; margin-top: 6px;">
+            <li><strong>Non-destructive first:</strong> Enter Factory Settings (<code>8888</code>) &rarr; Audio/Voice Settings &rarr; reduce <strong>Mic Gain</strong> from <code>15</code> down to <code>6 - 8</code>.</li>
+            <li>Plug in the provided 3.5mm external lapel mic and route it to your sun visor / A-pillar.</li>
+            <li><em>Last-resort hardware mod (only if echo persists):</em> Disassemble front plastic faceplate and snip one leg of the small internal SMD mic capsule labeled <code>MIC</code> on the PCB.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Tab: Battery -->
+      <div id="tab-battery" class="tab-content">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Parasitic Battery Drain (Dead Battery After 2-3 Days)</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> "Auto Sleep" (Fast Boot) mode keeps the CPU in suspend mode and the CANbus box continuously pings the Ford Gateway Module.</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ol style="margin-left: 20px; margin-top: 6px;">
+            <li>Open Android <strong>Settings &rarr; Car Settings &rarr; System Settings</strong>.</li>
+            <li>Find <strong>Shutdown Delay</strong> (or <strong>Sleep Mode</strong>).</li>
+            <li>Change value from <em>"3 Days / Auto Sleep"</em> to <strong><code>0 Minutes / Power Off Immediately</code></strong>.</li>
+            <li>The unit will perform a clean shutdown when the key is removed and driver's door opens, dropping standby drain below 15 mA.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Tab: CarPlay -->
+      <div id="tab-carplay" class="tab-content">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: CarPlay / Android Auto Disconnects or Lag</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> 2.4GHz Wi-Fi congestion or phone trying to connect to the old Ford Sync Bluetooth simultaneously.</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ol style="margin-left: 20px; margin-top: 6px;">
+            <li>On your iPhone, go to Bluetooth settings and <strong>FORGET "SYNC"</strong> completely.</li>
+            <li>In Android radio settings, set the Wi-Fi hotspot band to <strong>5.0 GHz</strong> (instead of 2.4 GHz).</li>
+            <li>In Zlink settings, set Driver Position to Left, and connection mode to Auto.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Tab: Airbag -->
+      <div id="tab-airbag" class="tab-content">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Passenger Airbag Warning Light / SRS Fault (DTC B11D8)</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> Upper hazard switch strip containing Passenger Airbag Deactivation indicator was unplugged while vehicle battery was connected.</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ol style="margin-left: 20px; margin-top: 6px;">
+            <li>Always disconnect the negative battery terminal before unplugging the dash.</li>
+            <li>Ensure the factory airbag indicator module is snapped securely into the new bezel and its plug clicked in firmly before reconnecting the battery.</li>
+            <li><em>If light is already on:</em> Disconnecting the battery will NOT clear SRS codes. Connect an OBDLink EX adapter, open <strong>FORScan</strong> on a laptop, access the <strong>RCM module</strong>, and click <strong>Clear DTCs</strong>.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Tab: USB -->
+      <div id="tab-usb" class="tab-content">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Center Console Factory USB Hub Dead</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> Illuminated dual USB ports in center console plug into OEM Sync APIM via proprietary 4-pin mini-USB cable.</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ol style="margin-left: 20px; margin-top: 6px;">
+            <li>Purchase a <strong>Ford Mini-USB to USB Type-A Retention Adapter</strong> (Metra AX-FDUSBA or Enfig KFU-FD2).</li>
+            <li>Connect the adapter to the factory mini-USB cable previously plugged into the Sync APIM.</li>
+            <li>Plug the standard USB-A end into one of the Incifum unit's rear USB leads. Console ports now handle wired CarPlay, Android Auto, and flash drives!</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Tab: GPS -->
+      <div id="tab-gps" class="tab-content">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Weak GPS Navigation Signal / Map Drifting</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> Cheap aftermarket magnetic puck suffers from RF attenuation beneath the F-150 solar windshield.</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ol style="margin-left: 20px; margin-top: 6px;">
+            <li>Order a $7 <strong>Fakra C Female (Blue) to SMA Male</strong> adapter cable from Amazon.</li>
+            <li>Unplug the Ford factory blue Fakra GPS cable from the old Sync display.</li>
+            <li>Connect adapter between factory blue roof lead and gold SMA threaded port on Incifum chassis for instant 3-second satellite locks!</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Tab: Dimmer -->
+      <div id="tab-dimmer" class="tab-content">
+        <h3 style="color: var(--hulk-green-glow); margin-bottom: 8px; font-family: 'Russo One', sans-serif;">Issue: Screen Goes 100% Pitch Black When Headlights Turn On</h3>
+        <p style="color: #cbd5e1;"><strong>Cause:</strong> Default Topway firmware sets the night backlight slider to 0%.</p>
+        <div class="fail-solution" style="margin-top: 12px; font-size: 0.95rem;">
+          <strong>Brandon's Step-by-Step Fix:</strong>
+          <ol style="margin-left: 20px; margin-top: 6px;">
+            <li>Turn headlight switch OFF so screen returns to day mode.</li>
+            <li>Go to <strong>Settings &rarr; Display</strong> (or Car Settings &rarr; Display Settings).</li>
+            <li>Set <strong>Day Backlight</strong> to <code>85% - 90%</code>.</li>
+            <li>Set <strong>Night Backlight</strong> to <code>40% - 45%</code> (NEVER set below 30%).</li>
+            <li>In Factory Settings (<code>8888</code>), verify Dimmer Mode is set to <code>CANbus (Auto)</code>.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Factory PIN Codes Cheat Sheet -->
+    
+    
+    <!-- ==================== PHASE 5: POST-INSTALL EXTRAS & ENGINE DIAGNOSTICS ==================== -->
+<div class="card" style="border-color: var(--hulk-green);">
+      <div class="card-hulk-title" style="color: var(--hulk-green-glow);">
+        <span>🏎️ OBD-II LIVE ENGINE DIAGNOSTICS &amp; CUSTOM RACE GAUGES</span>
+      </div>
+      <p style="color: #cbd5e1; margin-bottom: 16px;">
+        Can Brandon read engine trouble codes and monitor transmission temps for towing? <strong>HELL YES.</strong> Plug a $25 adapter into his OBD-II port to turn this 12.1" vertical screen into a badass digital race dash:
+      </p>
+
+      <div class="hero-flex">
+        <div>
+          <div class="painter-drip" style="border-left-color: var(--hulk-green);">
+            <div class="painter-heading" style="color: var(--hulk-green-glow); font-size: 1.25rem;">🔌 2-MINUTE HARDWARE SETUP</div>
+            <p style="color: #cbd5e1; font-size: 0.92rem;">
+              1. Buy a <strong>Veepeak OBDCheck BLE</strong> (Bluetooth) or <strong>OBDLink EX</strong> (USB) on Amazon (~$25).<br>
+              2. Plug it into the OBD-II diagnostic port located directly under the steering column by Brandon's left knee.<br>
+              3. Pair it to the Android radio via Bluetooth or plug the USB cable into the glovebox lead. Done.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div class="painter-drip" style="border-left-color: var(--hulk-purple);">
+            <div class="painter-heading" style="color: var(--hulk-purple-glow); font-size: 1.25rem;">📲 THE BEST APPS TO DOWNLOAD</div>
+            <p style="color: #cbd5e1; font-size: 0.92rem;">
+              • <strong>FORScan Lite ($4.99):</strong> The official Ford power tool. Reads proprietary Ford module codes across transmission, ABS, airbag, and 4x4 that generic scanners can't even see!<br>
+              • <strong>Torque Pro ($4.95):</strong> Giant digital gauges on the 12.1" vertical screen for Boost, Transmission Temp (crucial for towing), Coolant Temp, and clears Check Engine lights with one tap.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- House Painter Pro-Tip 2 -->
+    <div class="painter-drip">
+      <div class="painter-heading">
+        <span>🎨 BRANDON'S PAINTER CODE // RULE #2: THE BENCH TEST IS YOUR PRIMER COAT</span>
+      </div>
+      <p style="color: #cbd5e1; font-size: 1rem;">
+        You never slap high-gloss finish enamel on raw drywall without a primer coat first, and <strong>you NEVER snap a radio bezel into the dashboard before running a bench test</strong>. 
+        Reconnect the battery, turn the key to ON, and test the radio, backup camera, AC fan, and steering buttons right on the bench. It takes 2 minutes to fix a loose plug now, but takes 30 minutes of cursing to rip the dash apart again if you already snapped it in!
+      </p>
+    </div>
+
+    <!-- Step-by-Step Garage Manual with Persistent Checkboxes -->
+    <!-- Pro Craftsman Footer with Live View Counter -->
   <footer class="guide-footer">
     <div class="footer-card">
       <div class="footer-header">
@@ -2409,26 +2417,26 @@
   </div>
 
   <!-- Mobile Bottom Floating Quick-Dock (5 Touch-Optimized Tabs) -->
-  <nav class="mobile-dock" aria-label="Quick Navigation">
+    <nav class="mobile-dock" aria-label="Quick Navigation">
     <button class="dock-btn smash-dock" onclick="triggerHulkSmash(); scrollToTop();" title="Hulk Smash & Top">
-      <span class="dock-icon">👊</span>
+      <span class="dock-icon">⚡</span>
       <span class="dock-label">SMASH</span>
     </button>
-    <a href="#section-steps" class="dock-btn" title="Step-by-Step Manual">
+    <a href="#section-steps" class="dock-btn" title="Step-by-Step Garage Manual">
       <span class="dock-icon">🛠️</span>
       <span class="dock-label">STEPS</span>
     </a>
-    <a href="#step-4-box" class="dock-btn" title="Wiring & Harnesses">
+    <a href="#step-4-box" class="dock-btn" title="Wiring & Harness Matrix">
       <span class="dock-icon">🔌</span>
       <span class="dock-label">WIRING</span>
     </a>
-    <a href="#section-faults" class="dock-btn" title="18 Known Fixes">
-      <span class="dock-icon">🚨</span>
-      <span class="dock-label">FIXES</span>
+    <a href="#section-carplay" class="dock-btn" title="CarPlay & Passcodes">
+      <span class="dock-icon">📱</span>
+      <span class="dock-label">CARPLAY</span>
     </a>
-    <a href="#section-diag" class="dock-btn" title="Diagnostics Workbench">
-      <span class="dock-icon">💻</span>
-      <span class="dock-label">DIAG</span>
+    <a href="#section-community" class="dock-btn" title="Community War Room & All Fixes">
+      <span class="dock-icon">🔧</span>
+      <span class="dock-label">FIXES</span>
     </a>
   </nav>
 
