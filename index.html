@@ -1003,6 +1003,183 @@
       color: #05080f;
       font-weight: 900;
     }
+  
+    /* ========================================================
+       COMMUNITY WAR ROOM & INTEL GRID (Reddit, YouTube, Forums)
+       ======================================================== */
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.1rem;
+      margin-top: 1rem;
+    }
+    .community-card {
+      background: #090e17;
+      border: 1px solid rgba(0, 230, 118, 0.25);
+      border-radius: 10px;
+      padding: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .community-card:hover {
+      border-color: var(--hulk-green);
+      transform: translateY(-2px);
+    }
+    .community-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.6rem;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .community-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.25rem 0.55rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .badge-warn { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); }
+    .badge-alert { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); }
+    .badge-fix { background: rgba(0, 230, 118, 0.2); color: var(--hulk-green); border: 1px solid rgba(0, 230, 118, 0.4); }
+    .badge-tip { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); }
+    .badge-pro { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
+    
+    .community-source {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      font-family: monospace;
+    }
+    .community-card-title {
+      color: #f8fafc;
+      font-size: 1.05rem;
+      font-weight: 800;
+      margin: 0 0 0.6rem 0;
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 0.5px;
+    }
+    .community-card-body p {
+      color: #94a3b8;
+      font-size: 0.88rem;
+      line-height: 1.45;
+      margin: 0 0 0.75rem 0;
+    }
+    .community-fix-box {
+      background: rgba(0, 230, 118, 0.06);
+      border-left: 3px solid var(--hulk-green);
+      padding: 0.65rem 0.8rem;
+      border-radius: 0 6px 6px 0;
+      margin-top: auto;
+    }
+    .community-fix-box .fix-label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 900;
+      color: var(--hulk-green);
+      letter-spacing: 0.6px;
+      margin-bottom: 0.3rem;
+    }
+    .community-fix-box p {
+      color: #e2e8f0;
+      font-size: 0.84rem;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* ========================================================
+       PRO FOOTER & REAL-TIME VIEW COUNTER
+       ======================================================== */
+    .guide-footer {
+      width: 100%;
+      max-width: 1100px;
+      margin: 2.5rem auto 90px auto; /* 90px clear for mobile dock */
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+    .footer-card {
+      background: #090e17;
+      border: 1px solid rgba(0, 230, 118, 0.35);
+      border-radius: 12px;
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    .footer-hulk-title {
+      font-family: 'Bangers', cursive;
+      font-size: clamp(1.1rem, 3.2vw, 1.6rem);
+      color: var(--hulk-green);
+      letter-spacing: 1px;
+    }
+    .footer-sub {
+      color: #94a3b8;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+    }
+    .footer-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(0, 230, 118, 0.3), transparent);
+      margin: 1.2rem auto;
+      max-width: 600px;
+    }
+    .footer-counter-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .counter-badge-box {
+      display: inline-flex;
+      align-items: center;
+      background: #05080f;
+      border: 1px solid rgba(0, 230, 118, 0.4);
+      padding: 0.45rem 0.9rem;
+      border-radius: 8px;
+      gap: 0.75rem;
+      box-shadow: 0 0 15px rgba(0, 230, 118, 0.1);
+    }
+    .counter-pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--hulk-green);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--hulk-green);
+      animation: pulseGreen 1.8s infinite;
+    }
+    @keyframes pulseGreen {
+      0% { opacity: 0.4; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.2); }
+      100% { opacity: 0.4; transform: scale(0.9); }
+    }
+    .counter-heading {
+      color: #f8fafc;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .hits-badge-img {
+      height: 22px;
+      vertical-align: middle;
+      border-radius: 4px;
+      transition: transform 0.2s ease;
+    }
+    .hits-badge-img:hover {
+      transform: scale(1.05);
+    }
+    .counter-caption {
+      color: #64748b;
+      font-size: 0.75rem;
+      max-width: 480px;
+      line-height: 1.35;
+    }
+    .footer-bottom-info {
+      font-size: 0.82rem;
+      color: #94a3b8;
+    }
+
   </style>
 </head>
 <body>
@@ -1727,6 +1904,117 @@
     </div>
 
     <!-- Factory PIN Codes Cheat Sheet -->
+    
+    <!-- NEW: Community War Room & Multi-Platform Intel -->
+    <div class="card" id="section-community" style="border: 2px solid var(--hulk-green); box-shadow: 0 0 25px rgba(0, 230, 118, 0.15);">
+      <div class="card-hulk-title" style="color: var(--hulk-green-glow);">
+        <span>🌐 FIELD INTEL & COMMUNITY WAR ROOM (REDDIT • YOUTUBE • F150FORUM • XDA)</span>
+      </div>
+      <p style="color: #cbd5e1; margin-bottom: 1.2rem; font-size: 0.95rem; line-height: 1.5;">
+        Real-world teardowns, long-term road tests, and installer traps documented by actual 2015–2020 F-150 owners across Reddit, F150Forum.com, YouTube stereo fabricators, and XDA Developers. These pro-tips eliminate the quirks that factory manuals never mention:
+      </p>
+
+      <div class="community-grid">
+        
+        <!-- Trap 1: AC Vent Mic Echo -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-warn">🎙️ CALL QUALITY</span>
+            <span class="community-source">Reddit r/CarAV &amp; F150Forum</span>
+          </div>
+          <h4 class="community-card-title">The "AC Vent Mic" Echo Trap</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> The radio faceplate has a tiny built-in pinhole mic right next to the driver's AC vent. When air blows above setting 2, callers hear deafening rushing wind and echo.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Plug the included 3.5mm external lavalier microphone into the <code>MIC-IN</code> harness jack. Route the thin wire under the dash, up behind the driver's A-pillar weatherstripping, and clip it to the headliner above Brandon's sun visor. In Android Sound Settings, set microphone input to <em>External Priority</em>. Call clarity becomes crystal clear at 75 MPH.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 2: Parasitic Battery Drain -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-alert">🔋 BATTERY GUARD</span>
+            <span class="community-source">Reddit r/f150 &amp; XDA</span>
+          </div>
+          <h4 class="community-card-title">CANbus Sleep &amp; Standby Battery Drain</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> If the radio is set to "Instant Fast Boot / Never Sleep", certain CANbus decoders continue to ping the truck's MS-CAN network after the key is removed, drawing 150mA–300mA and flattening the truck battery after a 3-day weekend.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Open <strong>Factory Settings</strong> (PIN <code>126</code> or <code>3368</code>) → <strong>Power / Standby Setting</strong>. Configure <em>Auto Sleep Timeout</em> to <strong>24 Hours</strong> or <strong>Full Cold Shutdown</strong>. When Brandon leaves the truck parked for days, the unit cleanly powers off completely, preserving 100% of the Ford AGM battery.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 3: Brake Pedal Reverse Camera Flicker -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-fix">📷 BACKUP CAM</span>
+            <span class="community-source">YouTube Stereo Fabricators</span>
+          </div>
+          <h4 class="community-card-title">Brake-Pedal Camera Static &amp; Ground Loops</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> Ford third brake lights and tail lights pulse with high-frequency PWM voltage. If the yellow camera RCA barrel touches the bare steel dash framework, pressing the brake pedal causes the screen to flicker with horizontal lines or momentarily black out.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Wrap the yellow female-to-male RCA connection in 3 tight layers of 3M electrical tape or slide heat shrink tubing over it. Isolating the RCA metal barrel from chassis metal completely eliminates brake-induced video interference.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 4: Sun-Baked OEM Vent Clips -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-tip">🔥 DASH FABRICATION</span>
+            <span class="community-source">F150Forum Teardowns</span>
+          </div>
+          <h4 class="community-card-title">Brittle Sun-Baked AC Vent &amp; Hazard Clips</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> 2018 F-150 plastic louvers endure heavy sun baking through the windshield. Cold prying on the OEM hazard/traction switch or vent retaining clips snaps them instantly, making buttons sink into the new bezel.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Warm the backside retaining tabs with a hair dryer on warm for 40 seconds before prying. The softened plastic flexes smoothly without cracking, locking tight into the new 12.1" bezel with factory-firm tactile clicks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 5: USB Cable Staging -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-pro">🔌 CABIN ROUTING</span>
+            <span class="community-source">Installer Guild Consensus</span>
+          </div>
+          <h4 class="community-card-title">Never Trap Rear USBs Behind the Tablet</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> Tucking the two rear USB extension dongles into the void behind the screen. If Brandon ever wants to update offline maps, plug in a flash drive of FLAC music, or use a hardwire iPhone cable, he would have to pull the dash apart again.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Route USB #1 through the factory opening into the upper glove box (ideal for high-capacity music drives / firmware updates), and route USB #2 down into the center console sliding cubby for Brandon's passenger to plug in fast-charging devices.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trap 6: Polarized Sunglasses & Midday Glare -->
+        <div class="community-card">
+          <div class="community-card-header">
+            <span class="community-badge badge-tip">🕶️ OPTICAL CLARITY</span>
+            <span class="community-source">eBay &amp; Reddit Field Reviews</span>
+          </div>
+          <h4 class="community-card-title">Polarized Sunglasses &amp; High-Noon Glare</h4>
+          <div class="community-card-body">
+            <p><strong>The Trap:</strong> Because the 12.1" upright glass screen sits vertically, direct midday sun through the windshield creates glass reflections, and polarized sunglasses can cause dark rainbow prism distortion.</p>
+            <div class="community-fix-box">
+              <span class="fix-label">⚡ PRO CRAFTSMAN FIX:</span>
+              <p>Apply an inexpensive matte anti-glare screen protector (standard 12.1" tablet or universal matte film). It diffuses overhead sunlight into a soft readable glow and allows polarized lenses to see crisp navigation from any driving angle.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <div class="card">
       <div class="card-hulk-title">
         <span>🔐 FACTORY SECRET PASSCODE DIRECTORY</span>
@@ -2075,6 +2363,40 @@
 
   </script>
 
+  
+  <!-- Pro Craftsman Footer with Live View Counter -->
+  <footer class="guide-footer">
+    <div class="footer-card">
+      <div class="footer-header">
+        <span class="footer-hulk-title">⚡ BRANDON'S 2018 FORD F-150 MASTER INSTALLATION GUIDE ⚡</span>
+        <div class="footer-sub">Engineered Pro-Grade • Built Zero-Guesswork • Standalone Mobile Edition</div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Live Hits.sh Real-Time View Counter -->
+      <div class="footer-counter-container">
+        <div class="counter-badge-box">
+          <span class="counter-pulse-dot"></span>
+          <span class="counter-heading">REAL-TIME VISITOR LOG:</span>
+          <a href="https://hits.sh/kronchiki.github.io/f150-radio-guide/" target="_blank" rel="noopener noreferrer" class="counter-link" title="Click to view live analytics dashboard on hits.sh">
+            <img src="https://hits.sh/kronchiki.github.io/f150-radio-guide.svg?style=flat-square&label=GUIDE+VIEWS&color=00e676&labelColor=0d1522" alt="Live Guide View Counter" class="hits-badge-img">
+          </a>
+        </div>
+        <div class="counter-caption">
+          Counts every unique mobile &amp; desktop session. Tap badge for live hourly graphs &amp; referrer stats.
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom-info">
+        <div>🚀 Hosted on <strong>GitHub Pages</strong> via <a href="https://github.com/Kronchiki/f150-radio-guide" target="_blank" rel="noopener noreferrer" style="color: var(--hulk-green); text-decoration: none;">Kronchiki/f150-radio-guide</a></div>
+        <div style="margin-top: 0.35rem; color: #64748b; font-size: 0.78rem;">Designed for Ford F-150 Enthusiasts • Zero Sports Betting Lingo • 100% Craftsman Standards</div>
+      </div>
+    </div>
+  </footer>
+
   <!-- Tap-to-Zoom Fullscreen Image Modal -->
   <div id="image-modal" class="image-modal" onclick="closeImageModal()">
     <div class="modal-content-wrap" onclick="event.stopPropagation()">
@@ -2110,18 +2432,7 @@
   </nav>
 
 
-<script>
-window.addEventListener('load', () => {
-  const bad = [];
-  document.querySelectorAll('*').forEach(el => {
-    const r = el.getBoundingClientRect();
-    if (r.right > 375 && el.id !== 'overflow-banner') {
-      bad.push(el.tagName + '.' + el.className + (el.id ? '#' + el.id : '') + ' [w=' + el.offsetWidth + ', right=' + Math.round(r.right) + ']');
-    }
-  });
-  fetch('http://127.0.0.1:9999', { method: 'POST', body: bad.join('\n') }).catch(e => {});
-});
-</script>
+
 
 </body>
 </html>
