@@ -1181,6 +1181,66 @@
       color: #94a3b8;
     }
 
+  
+    /* ========================================================
+       YOUTUBE INTERACTIVE VIDEO CARDS
+       ======================================================== */
+    .yt-card-link {
+      display: flex;
+      flex-direction: column;
+      background: #05080f;
+      padding: 0.85rem;
+      border-radius: 8px;
+      border: 1px solid #1e293b;
+      text-decoration: none;
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .yt-card-link:hover, .yt-card-link:active {
+      border-color: #ef4444;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.25);
+    }
+    .yt-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.4rem;
+    }
+    .yt-badge {
+      background: #ef4444;
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 900;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+    .yt-channel {
+      color: #94a3b8;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .yt-title {
+      color: #f8fafc;
+      font-weight: 700;
+      font-size: 0.88rem;
+      margin-bottom: 0.3rem;
+      line-height: 1.3;
+    }
+    .yt-desc {
+      color: #64748b;
+      font-size: 0.76rem;
+      line-height: 1.35;
+      margin-bottom: 0.5rem;
+      flex-grow: 1;
+    }
+    .yt-action {
+      color: #f87171;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-top: auto;
+    }
+
   </style>
 </head>
 <body>
@@ -2015,28 +2075,47 @@
         <p style="color: #94a3b8; font-size: 0.84rem; margin: 0 0 0.8rem 0; line-height: 1.4;">
           If Brandon wants to see the exact dash teardown, bezel clips, or wire routing on video before unclipping anything, watch these top-rated installer guides:
         </p>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.75rem;">
-          <div style="background: #05080f; padding: 0.75rem; border-radius: 6px; border: 1px solid #1e293b;">
-            <div style="color: #f8fafc; font-weight: 700; font-size: 0.85rem;">Dean In Your DIY</div>
-            <div style="color: var(--hulk-green); font-size: 0.78rem; margin: 0.2rem 0;">"BEST TStyle Radio for F-150 | AutotecPro"</div>
-            <div style="color: #64748b; font-size: 0.74rem;">Full 2018 Lariat center stack teardown, 7mm bolt locations, and APIM bracket transfer.</div>
-          </div>
-          <div style="background: #05080f; padding: 0.75rem; border-radius: 6px; border: 1px solid #1e293b;">
-            <div style="color: #f8fafc; font-weight: 700; font-size: 0.85rem;">AutoTecPro Official</div>
-            <div style="color: var(--hulk-green); font-size: 0.78rem; margin: 0.2rem 0;">"12.1" / 14.4" Ford F150 2015-2020 Install Guide"</div>
-            <div style="color: #64748b; font-size: 0.74rem;">Pinpoint harness mating, CANbus module heat-sink spacing, and hazard board swap.</div>
-          </div>
-          <div style="background: #05080f; padding: 0.75rem; border-radius: 6px; border: 1px solid #1e293b;">
-            <div style="color: #f8fafc; font-weight: 700; font-size: 0.85rem;">Five Star Car Stereo</div>
-            <div style="color: var(--hulk-green); font-size: 0.78rem; margin: 0.2rem 0;">"F150 Dash Disassembly &amp; Cable Routing"</div>
-            <div style="color: #64748b; font-size: 0.74rem;">Pro fabricator techniques to avoid marring soft-touch vinyl and routing USBs.</div>
-          </div>
-          <div style="background: #05080f; padding: 0.75rem; border-radius: 6px; border: 1px solid #1e293b;">
-            <div style="color: #f8fafc; font-weight: 700; font-size: 0.85rem;">Phoenix Automotive</div>
-            <div style="color: var(--hulk-green); font-size: 0.78rem; margin: 0.2rem 0;">"How to connect 13" Android Radio for F-150"</div>
-            <div style="color: #64748b; font-size: 0.74rem;">Manual AC vs Automatic AC harness connections and backup camera RCA trigger setup.</div>
-          </div>
-        </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0.85rem;">
+          <a href="https://www.youtube.com/results?search_query=Deanin+It+Yourself+F150+AutotecPro+install" target="_blank" rel="noopener noreferrer" class="yt-card-link" title="Tap to watch Deanin' It Yourself installation walkthrough on YouTube">
+            <div class="yt-card-top">
+              <span class="yt-badge">▶ YOUTUBE</span>
+              <span class="yt-channel">Deanin' It Yourself</span>
+            </div>
+            <div class="yt-title">"BEST TStyle Radio for F-150 | AutotecPro"</div>
+            <div class="yt-desc">Full 2018 Lariat center stack teardown, 7mm bolt locations, and APIM bracket transfer.</div>
+            <div class="yt-action">Tap to Watch Video &rarr;</div>
+          </a>
+
+          <a href="https://www.youtube.com/results?search_query=AutoTecPro+12.1+Ford+F150+2015-2020+Installation+Guide" target="_blank" rel="noopener noreferrer" class="yt-card-link" title="Tap to watch AutoTecPro official installation walkthrough on YouTube">
+            <div class="yt-card-top">
+              <span class="yt-badge">▶ YOUTUBE</span>
+              <span class="yt-channel">AutoTecPro Official</span>
+            </div>
+            <div class="yt-title">"12.1" / 14.4" Ford F150 2015-2020 Install Guide"</div>
+            <div class="yt-desc">Pinpoint harness mating, CANbus module heat-sink spacing, and hazard board swap.</div>
+            <div class="yt-action">Tap to Watch Video &rarr;</div>
+          </a>
+
+          <a href="https://www.youtube.com/results?search_query=Five+Star+Car+Stereo+Ford+F150+Dash+Disassembly" target="_blank" rel="noopener noreferrer" class="yt-card-link" title="Tap to watch Five Star Car Stereo dash teardown on YouTube">
+            <div class="yt-card-top">
+              <span class="yt-badge">▶ YOUTUBE</span>
+              <span class="yt-channel">Five Star Car Stereo</span>
+            </div>
+            <div class="yt-title">"F150 Dash Disassembly &amp; Cable Routing"</div>
+            <div class="yt-desc">Pro fabricator techniques to avoid marring soft-touch vinyl and routing USBs.</div>
+            <div class="yt-action">Tap to Watch Video &rarr;</div>
+          </a>
+
+          <a href="https://www.youtube.com/results?search_query=Phoenix+Automotive+F150+Tesla+Screen+Installation+Guide" target="_blank" rel="noopener noreferrer" class="yt-card-link" title="Tap to watch Phoenix Automotive installation walkthrough on YouTube">
+            <div class="yt-card-top">
+              <span class="yt-badge">▶ YOUTUBE</span>
+              <span class="yt-channel">Phoenix Automotive</span>
+            </div>
+            <div class="yt-title">"How to connect 13" Android Radio for F-150"</div>
+            <div class="yt-desc">Manual AC vs Automatic AC harness connections and backup camera RCA trigger setup.</div>
+            <div class="yt-action">Tap to Watch Video &rarr;</div>
+          </a>
+        </div></div>
       </div>
 </div>
     </div>
