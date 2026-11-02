@@ -45,7 +45,7 @@
     html, body {
       max-width: 100%;
       width: 100%;
-      overflow-x: clip; /* Clean clip without creating scroll container */
+      overflow-x: hidden;
       scroll-behavior: smooth;
       background-color: var(--bg-black);
       color: var(--text-main);
@@ -149,30 +149,55 @@
       .container { padding: 24px 20px; }
     }
 
-    /* Live Ticker Bar */
+    /* ========================================================
+       BUTTER-SMOOTH INFINITE TICKER (ZERO STUTTER, GPU-ACCELERATED)
+       ======================================================== */
     .ticker-bar {
       width: 100%;
-      max-width: 100%;
-      background: #090e17;
+      background: #080d16;
       border-bottom: 2.5px solid var(--hulk-green);
       color: var(--hulk-green-glow);
       font-family: 'Orbitron', monospace;
       font-size: 0.8rem;
       font-weight: 800;
-      padding: 8px 0;
+      padding: 10px 0;
       overflow: hidden;
       white-space: nowrap;
       box-shadow: 0 0 20px rgba(34, 197, 94, 0.35);
       letter-spacing: 1px;
-      contain: paint;
       position: relative;
+      user-select: none;
+    }
+    .ticker-track {
+      display: inline-flex;
+      width: max-content;
+      will-change: transform;
+      animation: smoothTicker 36s linear infinite;
+    }
+    .ticker-track:hover {
+      animation-play-state: paused;
     }
     .ticker-content {
       display: inline-block;
-      animation: tickerRoll 32s linear infinite;
+      padding-right: 40px;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
     }
-    @keyframes tickerRoll {
-      0% { transform: translateX(100%); }
+    @keyframes smoothTicker {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
+    }
+    .birthday-glow {
+      color: #facc15 !important;
+      text-shadow: 0 0 10px rgba(250, 204, 21, 0.8);
+      font-weight: 900;
+    }
       100% { transform: translateX(-100%); }
     }
 
@@ -934,25 +959,44 @@
     /* ========================================================
        MOBILE FLOATING THUMB DOCK (5 Touch Targets)
        ======================================================== */
+    /* ========================================================
+       PERMANENT VIEWPORT-LOCKED BOTTOM NAVIGATION DOCK
+       ======================================================== */
     .mobile-dock {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      box-sizing: border-box;
-      height: 62px;
-      background: rgba(8, 13, 22, 0.96);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-top: 2.5px solid var(--hulk-purple-light);
-      box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.8), 0 -1px 15px rgba(126, 34, 206, 0.4);
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      align-items: center;
-      padding: 0 4px;
-      padding-bottom: env(safe-area-inset-bottom, 0px);
-      z-index: 9999;
+      position: fixed !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      height: 64px !important;
+      background: rgba(8, 13, 22, 0.96) !important;
+      backdrop-filter: blur(14px) !important;
+      -webkit-backdrop-filter: blur(14px) !important;
+      border-top: 2.5px solid var(--hulk-purple-light) !important;
+      box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.8), 0 -1px 15px rgba(126, 34, 206, 0.4) !important;
+      display: grid !important;
+      grid-template-columns: repeat(5, 1fr) !important;
+      align-items: center !important;
+      padding: 0 4px !important;
+      padding-bottom: env(safe-area-inset-bottom, 0px) !important;
+      z-index: 2147483647 !important;
+      transform: translate3d(0, 0, 0) !important;
+      -webkit-transform: translate3d(0, 0, 0) !important;
+      will-change: transform !important;
+    }
+    @media (min-width: 768px) {
+      .mobile-dock {
+        max-width: 640px !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translate3d(-50%, 0, 0) !important;
+        -webkit-transform: translate3d(-50%, 0, 0) !important;
+        bottom: 14px !important;
+        border-radius: 16px !important;
+        border: 2px solid var(--hulk-purple-light) !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.9), 0 0 20px rgba(168, 85, 247, 0.4) !important;
+      }
     }
     .dock-btn {
       background: transparent;
@@ -1274,10 +1318,15 @@
 
 
 
-  <!-- Live Garage Master Ticker -->
-  <div class="ticker-bar">
-    <div class="ticker-content">
-      ⚡ GARAGE MASTER WIRE: BRANDON'S 2018 FORD F-150 RADIO MASTER MANUAL ⚡ ALL 18 AMAZON REVIEW QUIRKS CRUSHED WITH 100% PRECISION ⚡ DISCONNECT THE NEGATIVE BATTERY GROUND FIRST OR THE AIRBAG MODULE WILL BITE YOUR ASS ⚡ ICE-COLD AC BLOWING ON YOUR BALLS ⚡ FAULT 7 DEFEATED: 2018 B&amp;O PLAY A2B DIGITAL BUS ACTIVATED ⚡ FAULT 10 DEFEATED: REVERSED SEEK BUTTONS TOGGLED ⚡ 100% BULLSHIT-FREE INSTALLATION ⚡
+    <!-- Butter-Smooth Infinite Ticker (Seamless Loop & Brandon's Birthday Nov 3rd) -->
+  <div class="ticker-bar" aria-label="Live Status Ticker">
+    <div class="ticker-track">
+      <div class="ticker-content">
+        🎂 <span class="birthday-glow">SPECIAL BIRTHDAY BUILD: HAPPY BIRTHDAY BRANDON (NOV 3RD)!</span> 🎂 &nbsp;⚡&nbsp; 2018 FORD F-150 12.1" RADIO MASTER MANUAL &nbsp;⚡&nbsp; ALL 18 FORUM QUIRKS CRUSHED &nbsp;⚡&nbsp; DISCONNECT 10MM BATTERY GROUND FIRST (AIRBAG DTC B1202 SHIELD) &nbsp;⚡&nbsp; ICE-COLD AC BLOWING &nbsp;⚡&nbsp; 2018 B&amp;O PLAY A2B DIGITAL BUS ACTIVATED &nbsp;⚡&nbsp; REVERSED SEEK BUTTONS TOGGLED &nbsp;⚡&nbsp; 100% PRO CRAFTSMAN STANDARDS &nbsp;⚡&nbsp;
+      </div>
+      <div class="ticker-content" aria-hidden="true">
+        🎂 <span class="birthday-glow">SPECIAL BIRTHDAY BUILD: HAPPY BIRTHDAY BRANDON (NOV 3RD)!</span> 🎂 &nbsp;⚡&nbsp; 2018 FORD F-150 12.1" RADIO MASTER MANUAL &nbsp;⚡&nbsp; ALL 18 FORUM QUIRKS CRUSHED &nbsp;⚡&nbsp; DISCONNECT 10MM BATTERY GROUND FIRST (AIRBAG DTC B1202 SHIELD) &nbsp;⚡&nbsp; ICE-COLD AC BLOWING &nbsp;⚡&nbsp; 2018 B&amp;O PLAY A2B DIGITAL BUS ACTIVATED &nbsp;⚡&nbsp; REVERSED SEEK BUTTONS TOGGLED &nbsp;⚡&nbsp; 100% PRO CRAFTSMAN STANDARDS &nbsp;⚡&nbsp;
+      </div>
     </div>
   </div>
 
@@ -1285,6 +1334,14 @@
 
     <!-- Comic Header -->
     <header id="main-header">
+            <!-- Brandon's Birthday Nov 3rd Special Celebration Badge -->
+      <div style="display: flex; justify-content: center; margin-bottom: 12px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(250, 204, 21, 0.15); border: 1.5px solid #facc15; border-radius: 9999px; padding: 6px 18px; box-shadow: 0 0 18px rgba(250, 204, 21, 0.4);">
+          <span style="font-size: 1.15rem;">🎂</span>
+          <span style="font-family: 'Orbitron', monospace; font-size: 0.84rem; font-weight: 900; color: #fef08a; letter-spacing: 0.8px;">SPECIAL EDITION: BRANDON'S NOV 3RD BIRTHDAY BUILD</span>
+          <span style="font-size: 1.15rem;">🎉</span>
+        </div>
+      </div>
       <div class="hulk-banner-sub">
         <span>💥 BUILT BRANDON TOUGH</span>
         <span>•</span>
