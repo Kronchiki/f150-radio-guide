@@ -1,0 +1,336 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c16" />
+      <stop offset="50%" stop-color="#0b111e" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Bezel Surface Gradients -->
+    <linearGradient id="oemBezelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242c3d" />
+      <stop offset="100%" stop-color="#141a26" />
+    </linearGradient>
+    <linearGradient id="inciBezelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Screen Glass Gradients -->
+    <linearGradient id="oemScreenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e2638" />
+      <stop offset="100%" stop-color="#0a0e17" />
+    </linearGradient>
+    <linearGradient id="teslaScreenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.25" />
+      <stop offset="40%" stop-color="#0f172a" />
+      <stop offset="85%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Green Glow & Arrow Gradients -->
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+    <linearGradient id="redWarningGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#450a0a" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#2a0606" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Drop Shadows & Glow Filters -->
+    <filter id="neonGlowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <!-- Marker for Green Transfer Arrows -->
+    <marker id="greenArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#22c55e" />
+    </marker>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+
+  <!-- Blueprint Background Grid Pattern -->
+  <g opacity="0.07" stroke="#38bdf8" stroke-width="1">
+    <path d="M 0 50 H 800 M 0 100 H 800 M 0 150 H 800 M 0 200 H 800 M 0 250 H 800 M 0 300 H 800 M 0 350 H 800 M 0 400 H 800 M 0 450 H 800" />
+    <path d="M 50 0 V 500 M 100 0 V 500 M 150 0 V 500 M 200 0 V 500 M 250 0 V 500 M 300 0 V 500 M 350 0 V 500 M 400 0 V 500 M 450 0 V 500 M 500 0 V 500 M 550 0 V 500 M 600 0 V 500 M 650 0 V 500 M 700 0 V 500 M 750 0 V 500" />
+  </g>
+
+  <!-- ==================== HEADER SECTION ==================== -->
+  <g transform="translate(0, 0)">
+    <!-- Header Badge -->
+    <rect x="25" y="14" width="115" height="22" rx="4" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1" />
+    <text x="82" y="29" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" letter-spacing="1" text-anchor="middle">STEP 3 GUIDE</text>
+
+    <!-- Main Title -->
+    <text x="150" y="31" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="800" letter-spacing="0.5">2018 FORD F-150: BEZEL COMPONENT MIGRATION</text>
+    <text x="640" y="30" fill="#22c55e" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle" filter="url(#neonGlowGreen)">ONLY 3 ITEMS TRANSFER</text>
+    <line x1="25" y1="44" x2="775" y2="44" stroke="#334155" stroke-width="1.2" />
+  </g>
+
+  <!-- ==================== LEFT: OEM FACTORY BEZEL ==================== -->
+  <g transform="translate(30, 56)">
+    <!-- Outer Container Card -->
+    <rect x="0" y="0" width="310" height="315" rx="10" fill="#0d1525" stroke="#334155" stroke-width="1.5" filter="url(#dropShadow)" />
+    
+    <!-- Title Badge -->
+    <rect x="15" y="10" width="160" height="20" rx="4" fill="#334155" fill-opacity="0.6" />
+    <text x="95" y="24" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">FACTORY OEM DASH BEZEL</text>
+    <text x="245" y="24" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600">(Remove From Truck)</text>
+
+    <!-- Main OEM Bezel Body Silhouette -->
+    <rect x="25" y="38" width="260" height="262" rx="14" fill="url(#oemBezelGrad)" stroke="#475569" stroke-width="2" />
+
+    <!-- 1. Top Hazard & Traction Switch Bar (Transfer Item #2) -->
+    <g id="oem-switch-bar">
+      <rect x="65" y="48" width="180" height="26" rx="5" fill="#1e293b" stroke="#22c55e" stroke-width="2" />
+      <!-- Switch Bar Buttons -->
+      <rect x="72" y="52" width="36" height="18" rx="2" fill="#0f172a" stroke="#475569" stroke-width="1" />
+      <text x="90" y="64" fill="#94a3b8" font-family="sans-serif" font-size="7" font-weight="700" text-anchor="middle">HZD ⚠</text>
+      
+      <rect x="114" y="52" width="36" height="18" rx="2" fill="#0f172a" stroke="#475569" stroke-width="1" />
+      <text x="132" y="64" fill="#94a3b8" font-family="sans-serif" font-size="7" font-weight="700" text-anchor="middle">TRAC 🛞</text>
+      
+      <rect x="156" y="52" width="36" height="18" rx="2" fill="#0f172a" stroke="#475569" stroke-width="1" />
+      <text x="174" y="64" fill="#94a3b8" font-family="sans-serif" font-size="7" font-weight="700" text-anchor="middle">A-OFF Ⓐ</text>
+      
+      <rect x="198" y="52" width="40" height="18" rx="2" fill="#0f172a" stroke="#475569" stroke-width="1" />
+      <text x="218" y="64" fill="#94a3b8" font-family="sans-serif" font-size="7" font-weight="700" text-anchor="middle">HILL ⛰</text>
+
+      <!-- Screw Tabs on Switch Bar -->
+      <circle cx="60" cy="61" r="3.5" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+      <circle cx="250" cy="61" r="3.5" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+    </g>
+
+    <!-- 2. Left A/C Vent Louver (Transfer Item #1) -->
+    <g id="oem-left-vent">
+      <rect x="33" y="85" width="40" height="195" rx="8" fill="#111827" stroke="#22c55e" stroke-width="2" />
+      <!-- Vent Horizontal Slats -->
+      <line x1="37" y1="105" x2="69" y2="105" stroke="#374151" stroke-width="2.5" />
+      <line x1="37" y1="125" x2="69" y2="125" stroke="#374151" stroke-width="2.5" />
+      <line x1="37" y1="145" x2="69" y2="145" stroke="#374151" stroke-width="2.5" />
+      <line x1="37" y1="165" x2="69" y2="165" stroke="#374151" stroke-width="2.5" />
+      <line x1="37" y1="185" x2="69" y2="185" stroke="#374151" stroke-width="2.5" />
+      <line x1="37" y1="205" x2="69" y2="205" stroke="#374151" stroke-width="2.5" />
+      <line x1="37" y1="225" x2="69" y2="225" stroke="#374151" stroke-width="2.5" />
+      <line x1="37" y1="245" x2="69" y2="245" stroke="#374151" stroke-width="2.5" />
+      <line x1="37" y1="265" x2="69" y2="265" stroke="#374151" stroke-width="2.5" />
+      <!-- Adjustment knob in center -->
+      <rect x="50" y="178" width="6" height="16" rx="2" fill="#38bdf8" />
+    </g>
+
+    <!-- 3. Right A/C Vent Louver (Transfer Item #1) -->
+    <g id="oem-right-vent">
+      <rect x="237" y="85" width="40" height="195" rx="8" fill="#111827" stroke="#22c55e" stroke-width="2" />
+      <!-- Vent Horizontal Slats -->
+      <line x1="241" y1="105" x2="273" y2="105" stroke="#374151" stroke-width="2.5" />
+      <line x1="241" y1="125" x2="273" y2="125" stroke="#374151" stroke-width="2.5" />
+      <line x1="241" y1="145" x2="273" y2="145" stroke="#374151" stroke-width="2.5" />
+      <line x1="241" y1="165" x2="273" y2="165" stroke="#374151" stroke-width="2.5" />
+      <line x1="241" y1="185" x2="273" y2="185" stroke="#374151" stroke-width="2.5" />
+      <line x1="241" y1="205" x2="273" y2="205" stroke="#374151" stroke-width="2.5" />
+      <line x1="241" y1="225" x2="273" y2="225" stroke="#374151" stroke-width="2.5" />
+      <line x1="241" y1="245" x2="273" y2="245" stroke="#374151" stroke-width="2.5" />
+      <line x1="241" y1="265" x2="273" y2="265" stroke="#374151" stroke-width="2.5" />
+      <!-- Adjustment knob in center -->
+      <rect x="254" y="178" width="6" height="16" rx="2" fill="#38bdf8" />
+    </g>
+
+    <!-- Center OEM Screen & Control Stack (STAY WITH OEM / DO NOT REMOVE) -->
+    <g id="oem-center-stack">
+      <rect x="80" y="85" width="150" height="195" rx="6" fill="#18202f" stroke="#64748b" stroke-width="1.2" />
+      
+      <!-- OEM 8" Display Area -->
+      <rect x="88" y="93" width="134" height="78" rx="4" fill="url(#oemScreenGrad)" stroke="#334155" stroke-width="1" />
+      <text x="155" y="132" fill="#64748b" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">FACTORY SCREEN</text>
+      <text x="155" y="146" fill="#475569" font-family="sans-serif" font-size="8" text-anchor="middle">(SYNC 3 or 4.2" Screen)</text>
+
+      <!-- Physical Radio / CD Slot -->
+      <rect x="96" y="180" width="118" height="6" rx="2" fill="#090d16" />
+      <!-- Physical Buttons & Knobs -->
+      <circle cx="106" cy="204" r="10" fill="#334155" stroke="#64748b" stroke-width="1" />
+      <circle cx="204" cy="204" r="10" fill="#334155" stroke="#64748b" stroke-width="1" />
+      <rect x="124" y="196" width="62" height="16" rx="3" fill="#0f172a" />
+      
+      <!-- Physical AC Dials at Bottom -->
+      <circle cx="112" cy="252" r="13" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+      <circle cx="198" cy="252" r="13" fill="#1e293b" stroke="#475569" stroke-width="1.5" />
+      <rect x="134" y="244" width="42" height="18" rx="2" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      
+      <!-- Red "STAYS IN SHELF" Indicator Tag -->
+      <rect x="85" y="200" width="140" height="24" rx="4" fill="#450a0a" fill-opacity="0.85" stroke="#ef4444" stroke-width="1" />
+      <text x="155" y="216" fill="#fca5a5" font-family="sans-serif" font-size="9" font-weight="800" text-anchor="middle">STAYS WITH OEM BEZEL</text>
+    </g>
+
+    <!-- 4. Yellow/Orange Metal Spring Retention Clips (Transfer Item #3) -->
+    <g id="oem-metal-clips">
+      <!-- 6 clips around perimeter -->
+      <rect x="19" y="80" width="8" height="12" rx="2" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+      <rect x="19" y="165" width="8" height="12" rx="2" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+      <rect x="19" y="250" width="8" height="12" rx="2" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+
+      <rect x="283" y="80" width="8" height="12" rx="2" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+      <rect x="283" y="165" width="8" height="12" rx="2" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+      <rect x="283" y="250" width="8" height="12" rx="2" fill="#f59e0b" stroke="#ffffff" stroke-width="1" />
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT: INCIFUM 12.1" NEW BEZEL ==================== -->
+  <g transform="translate(460, 56)">
+    <!-- Outer Container Card -->
+    <rect x="0" y="0" width="310" height="315" rx="10" fill="#0d1525" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6" filter="url(#dropShadow)" />
+    
+    <!-- Title Badge -->
+    <rect x="15" y="10" width="175" height="20" rx="4" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1" />
+    <text x="102" y="24" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="middle">INCIFUM 12.1" NEW BEZEL</text>
+    <text x="245" y="24" fill="#22c55e" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">(Destination)</text>
+
+    <!-- Main Incifum Bezel Body Silhouette -->
+    <rect x="25" y="38" width="260" height="262" rx="14" fill="url(#inciBezelGrad)" stroke="#0284c7" stroke-width="2" />
+
+    <!-- 1. Top Switch Bar Socket (Receives Item #2) -->
+    <g id="inci-switch-socket">
+      <rect x="65" y="48" width="180" height="26" rx="5" fill="#090d16" stroke="#22c55e" stroke-width="2" stroke-dasharray="4,3" />
+      <text x="155" y="65" fill="#22c55e" font-family="sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">TRANSFER SWITCH BAR HERE</text>
+      <!-- Screw receiver holes -->
+      <circle cx="60" cy="61" r="3" fill="#1e293b" stroke="#22c55e" stroke-width="1.5" />
+      <circle cx="250" cy="61" r="3" fill="#1e293b" stroke="#22c55e" stroke-width="1.5" />
+    </g>
+
+    <!-- 2. Left A/C Vent Cutout (Receives Item #1) -->
+    <g id="inci-left-vent-cutout">
+      <rect x="33" y="85" width="40" height="195" rx="8" fill="#080c14" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,4" />
+      <text x="53" y="175" fill="#22c55e" font-family="sans-serif" font-size="9" font-weight="700" text-anchor="middle" transform="rotate(-90 53 175)">SNAP OEM VENT HERE</text>
+    </g>
+
+    <!-- 3. Right A/C Vent Cutout (Receives Item #1) -->
+    <g id="inci-right-vent-cutout">
+      <rect x="237" y="85" width="40" height="195" rx="8" fill="#080c14" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,4" />
+      <text x="257" y="175" fill="#22c55e" font-family="sans-serif" font-size="9" font-weight="700" text-anchor="middle" transform="rotate(90 257 175)">SNAP OEM VENT HERE</text>
+    </g>
+
+    <!-- 4. Massive 12.1" Vertical Tesla-Style Display Screen -->
+    <g id="inci-touchscreen">
+      <rect x="79" y="82" width="152" height="210" rx="8" fill="url(#teslaScreenGrad)" stroke="#38bdf8" stroke-width="1.8" />
+      
+      <!-- Top Android Status Bar -->
+      <rect x="85" y="88" width="140" height="12" rx="2" fill="#0c1322" />
+      <text x="93" y="97" fill="#94a3b8" font-family="sans-serif" font-size="6.5">12:45</text>
+      <text x="155" y="97" fill="#38bdf8" font-family="sans-serif" font-size="6.5" font-weight="700" text-anchor="middle">INCIFUM 12.1"</text>
+      <text x="215" y="97" fill="#22c55e" font-family="sans-serif" font-size="6.5" text-anchor="end">4G • 🛜</text>
+
+      <!-- Center Display: Apple CarPlay / Navigation Mockup -->
+      <rect x="85" y="104" width="140" height="120" rx="4" fill="#0f172a" fill-opacity="0.8" stroke="#1e293b" stroke-width="1" />
+      <circle cx="155" cy="148" r="24" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1" />
+      <path d="M 147 140 L 165 148 L 147 156 Z" fill="#38bdf8" />
+      <text x="155" y="185" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="700" text-anchor="middle">Wireless CarPlay / AA</text>
+      <text x="155" y="198" fill="#94a3b8" font-family="sans-serif" font-size="7.5" text-anchor="middle">Built-in Display &amp; OS</text>
+      <text x="155" y="212" fill="#22c55e" font-family="sans-serif" font-size="7" font-weight="600" text-anchor="middle">✔ No Factory Screen Needed</text>
+
+      <!-- Bottom Digital Climate Control Section -->
+      <rect x="85" y="228" width="140" height="58" rx="4" fill="#0b1329" stroke="#0284c7" stroke-width="1" />
+      <text x="93" y="243" fill="#38bdf8" font-family="sans-serif" font-size="8" font-weight="700">72°F</text>
+      <text x="217" y="243" fill="#ef4444" font-family="sans-serif" font-size="8" font-weight="700" text-anchor="end">72°F</text>
+      <!-- Fan speed / A/C controls -->
+      <circle cx="155" cy="245" r="9" fill="#1e293b" stroke="#38bdf8" stroke-width="1" />
+      <text x="155" y="248" fill="#ffffff" font-family="sans-serif" font-size="7" text-anchor="middle">❄</text>
+      <rect x="95" y="260" width="120" height="18" rx="3" fill="#1e293b" />
+      <text x="155" y="272" fill="#cbd5e1" font-family="sans-serif" font-size="7.5" font-weight="600" text-anchor="middle">TOUCH A/C CLIMATE PANEL</text>
+    </g>
+
+    <!-- Clip Receiver Tabs (Receives Item #3) -->
+    <g id="inci-clip-tabs">
+      <rect x="19" y="80" width="8" height="12" rx="2" fill="#090d16" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="2,2" />
+      <rect x="19" y="165" width="8" height="12" rx="2" fill="#090d16" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="2,2" />
+      <rect x="19" y="250" width="8" height="12" rx="2" fill="#090d16" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="2,2" />
+
+      <rect x="283" y="80" width="8" height="12" rx="2" fill="#090d16" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="2,2" />
+      <rect x="283" y="165" width="8" height="12" rx="2" fill="#090d16" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="2,2" />
+      <rect x="283" y="250" width="8" height="12" rx="2" fill="#090d16" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="2,2" />
+    </g>
+  </g>
+
+  <!-- ==================== CENTER: MIGRATION CALLOUT ARROWS ==================== -->
+  <!-- Transfer Callout 1: Top Switch Bar -->
+  <g id="transfer-callout-top">
+    <path d="M 285 116 C 350 95, 430 95, 520 116" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" marker-end="url(#greenArrow)" filter="url(#neonGlowGreen)" />
+    <!-- Callout Pill Label -->
+    <rect x="325" y="82" width="150" height="24" rx="12" fill="#064e3b" stroke="#22c55e" stroke-width="1.5" filter="url(#dropShadow)" />
+    <text x="400" y="98" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800" text-anchor="middle">① TOP SWITCH BAR (2 Screws)</text>
+  </g>
+
+  <!-- Transfer Callout 2: A/C Vent Louvers -->
+  <g id="transfer-callout-vents">
+    <path d="M 315 200 C 360 185, 420 185, 485 200" fill="none" stroke="#22c55e" stroke-width="3" stroke-linecap="round" marker-end="url(#greenArrow)" filter="url(#neonGlowGreen)" />
+    <!-- Callout Pill Label -->
+    <rect x="320" y="174" width="160" height="24" rx="12" fill="#064e3b" stroke="#22c55e" stroke-width="1.5" filter="url(#dropShadow)" />
+    <text x="400" y="190" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800" text-anchor="middle">② L &amp; R A/C VENTS (Snap Tabs)</text>
+  </g>
+
+  <!-- Transfer Callout 3: Metal Spring Clips -->
+  <g id="transfer-callout-clips">
+    <path d="M 320 285 C 360 270, 420 270, 470 285" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" marker-end="url(#greenArrow)" filter="url(#dropShadow)" />
+    <!-- Callout Pill Label -->
+    <rect x="315" y="260" width="170" height="24" rx="12" fill="#78350f" stroke="#f59e0b" stroke-width="1.5" filter="url(#dropShadow)" />
+    <text x="400" y="276" fill="#fef3c7" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800" text-anchor="middle">③ METAL SPRING CLIPS (Pry Off)</text>
+  </g>
+
+
+  <!-- ==================== BOTTOM: RED STRIKE-THROUGH WARNING BOX ==================== -->
+  <g transform="translate(25, 385)">
+    <!-- Main Warning Card -->
+    <rect x="0" y="0" width="750" height="102" rx="8" fill="url(#redWarningGrad)" stroke="#ef4444" stroke-width="2" filter="url(#dropShadow)" />
+
+    <!-- Left Warning Octagon / Stop Sign Icon -->
+    <g transform="translate(18, 16)">
+      <polygon points="12,0 28,0 40,12 40,28 28,40 12,40 0,28 0,12" fill="#ef4444" stroke="#ffffff" stroke-width="1.5" />
+      <text x="20" y="26" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" text-anchor="middle">STOP</text>
+    </g>
+
+    <!-- Warning Title -->
+    <text x="70" y="28" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="900" letter-spacing="0.5">DO NOT TOUCH / DO NOT UNBOLT THESE FACTORY CORE MODULES:</text>
+    
+    <!-- 3 Protected Items in Red Warning Blocks with Strike-throughs -->
+    <!-- Item 1: Factory Screen -->
+    <g transform="translate(70, 36)">
+      <rect x="0" y="0" width="205" height="42" rx="4" fill="#180505" stroke="#ef4444" stroke-width="1.2" />
+      <text x="10" y="17" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800">1. FACTORY 8" / 4.2" SCREEN</text>
+      <text x="10" y="32" fill="#fca5a5" font-family="sans-serif" font-size="8.5">Never unbolt from back bracket</text>
+      <!-- Red Crossout X -->
+      <line x1="185" y1="8" x2="198" y2="34" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+      <line x1="198" y1="8" x2="185" y2="34" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- Item 2: Factory APIM Module -->
+    <g transform="translate(285, 36)">
+      <rect x="0" y="0" width="215" height="42" rx="4" fill="#180505" stroke="#ef4444" stroke-width="1.2" />
+      <text x="10" y="17" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800">2. METAL APIM COMPUTER</text>
+      <text x="10" y="32" fill="#fca5a5" font-family="sans-serif" font-size="8.5">Stays bolted to factory screen back</text>
+      <!-- Red Crossout X -->
+      <line x1="195" y1="8" x2="208" y2="34" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+      <line x1="208" y1="8" x2="195" y2="34" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- Item 3: Factory CD Player / ACM -->
+    <g transform="translate(510, 36)">
+      <rect x="0" y="0" width="225" height="42" rx="4" fill="#180505" stroke="#ef4444" stroke-width="1.2" />
+      <text x="10" y="17" fill="#f87171" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800">3. ACM / CD PLAYER MODULE</text>
+      <text x="10" y="32" fill="#fca5a5" font-family="sans-serif" font-size="8.5">Removed as whole chassis block</text>
+      <!-- Red Crossout X -->
+      <line x1="205" y1="8" x2="218" y2="34" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+      <line x1="218" y1="8" x2="205" y2="34" stroke="#ef4444" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- Bottom summary line -->
+    <text x="375" y="93" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="middle">
+      💡 THEY REMAIN IN ONE INTACT PIECE AND GO DIRECTLY ONTO YOUR GARAGE SHELF FOR REVERSIBILITY!
+    </text>
+  </g>
+</svg>

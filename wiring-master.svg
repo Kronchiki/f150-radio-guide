@@ -1,0 +1,433 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c16" />
+      <stop offset="50%" stop-color="#0b111e" />
+      <stop offset="100%" stop-color="#0e1726" />
+    </linearGradient>
+
+    <!-- Metal Chassis Gradients -->
+    <linearGradient id="chassisGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="heatsinkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Connector & Hardware Gradients -->
+    <linearGradient id="goldSmaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="50%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+    <linearGradient id="rcaYellowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <linearGradient id="canboxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Card Background Gradients -->
+    <linearGradient id="activeHarnessGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#022c22" stop-opacity="0.6" />
+    </linearGradient>
+    <linearGradient id="warningCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#450a0a" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1c0404" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="unusedCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="greenGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="shadowFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <!-- Markers -->
+    <marker id="greenDot" viewBox="0 0 8 8" refX="4" refY="4" markerWidth="6" markerHeight="6">
+      <circle cx="4" cy="4" r="3" fill="#22c55e" />
+    </marker>
+    <marker id="cyanArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="900" height="560" fill="url(#bgGrad2)" />
+
+  <!-- Blueprint Background Grid Pattern -->
+  <g opacity="0.06" stroke="#38bdf8" stroke-width="1">
+    <path d="M 0 40 H 900 M 0 80 H 900 M 0 120 H 900 M 0 160 H 900 M 0 200 H 900 M 0 240 H 900 M 0 280 H 900 M 0 320 H 900 M 0 360 H 900 M 0 400 H 900 M 0 440 H 900 M 0 480 H 900 M 0 520 H 900" />
+    <path d="M 40 0 V 560 M 80 0 V 560 M 120 0 V 560 M 160 0 V 560 M 200 0 V 560 M 240 0 V 560 M 280 0 V 560 M 320 0 V 560 M 360 0 V 560 M 400 0 V 560 M 440 0 V 560 M 480 0 V 560 M 520 0 V 560 M 560 0 V 560 M 600 0 V 560 M 640 0 V 560 M 680 0 V 560 M 720 0 V 560 M 760 0 V 560 M 800 0 V 560 M 840 0 V 560 M 880 0 V 560" />
+  </g>
+
+  <!-- ==================== HEADER SECTION ==================== -->
+  <g transform="translate(0, 0)">
+    <!-- Header Badge -->
+    <rect x="25" y="14" width="105" height="22" rx="4" fill="#0284c7" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1" />
+    <text x="77" y="29" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" letter-spacing="1" text-anchor="middle">STEP 4 GUIDE</text>
+
+    <!-- Main Title -->
+    <text x="140" y="31" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="16.5" font-weight="800" letter-spacing="0.5">INCIFUM 12.1" MASTER WIRING &amp; PORT SCHEMATIC</text>
+    <text x="740" y="30" fill="#22c55e" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" text-anchor="middle" filter="url(#greenGlow)">2018 FORD F-150 PLUG &amp; PLAY</text>
+    <line x1="25" y1="44" x2="875" y2="44" stroke="#334155" stroke-width="1.2" />
+  </g>
+
+  <!-- ==================== LEFT: INCIFUM 12.1" REAR CHASSIS ==================== -->
+  <g transform="translate(25, 56)">
+    <!-- Chassis Outer Shell -->
+    <rect x="0" y="0" width="275" height="488" rx="10" fill="url(#chassisGrad)" stroke="#475569" stroke-width="2" filter="url(#shadowFilter)" />
+
+    <!-- Unit Rear Header Badge -->
+    <rect x="15" y="10" width="180" height="20" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1" />
+    <text x="105" y="24" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" text-anchor="middle">INCIFUM UNIT REAR CHASSIS</text>
+    <circle cx="250" cy="20" r="4" fill="#22c55e" />
+
+    <!-- Aluminum Heatsink Fins Simulation -->
+    <g transform="translate(15, 36)" opacity="0.65">
+      <rect x="0" y="0" width="245" height="26" rx="3" fill="url(#heatsinkGrad)" stroke="#1e293b" stroke-width="1" />
+      <line x1="15" y1="3" x2="15" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="35" y1="3" x2="35" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="55" y1="3" x2="55" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="75" y1="3" x2="75" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="95" y1="3" x2="95" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="115" y1="3" x2="115" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="135" y1="3" x2="135" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="155" y1="3" x2="155" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="175" y1="3" x2="175" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="195" y1="3" x2="195" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="215" y1="3" x2="215" y2="23" stroke="#475569" stroke-width="2" />
+      <line x1="230" y1="3" x2="230" y2="23" stroke="#475569" stroke-width="2" />
+    </g>
+
+    <!-- ================= PORT 1: 16-PIN MAIN POWER PORT ================= -->
+    <g id="port-power" transform="translate(15, 72)">
+      <rect x="0" y="0" width="245" height="58" rx="6" fill="#090d16" stroke="#22c55e" stroke-width="2" />
+      <!-- Port Name & Pin Count -->
+      <text x="10" y="18" fill="#22c55e" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800">16-PIN MAIN POWER SOCKET</text>
+      <text x="235" y="17" fill="#86efac" font-family="sans-serif" font-size="8.5" font-weight="700" text-anchor="end">PORT #1</text>
+      <!-- 2x8 Pin Graphic Matrix -->
+      <g transform="translate(10, 24)">
+        <rect x="0" y="0" width="130" height="26" rx="3" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <!-- Row 1 Pins -->
+        <rect x="4" y="4" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="19" y="4" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="34" y="4" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="49" y="4" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="64" y="4" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="79" y="4" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="94" y="4" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="109" y="4" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <!-- Row 2 Pins -->
+        <rect x="4" y="14" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="19" y="14" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="34" y="14" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="49" y="14" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="64" y="14" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="79" y="14" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="94" y="14" width="11" height="8" rx="1.5" fill="#f8fafc" />
+        <rect x="109" y="14" width="11" height="8" rx="1.5" fill="#f8fafc" />
+      </g>
+      <!-- Description -->
+      <text x="148" y="36" fill="#94a3b8" font-family="sans-serif" font-size="8">Power, Speakers,</text>
+      <text x="148" y="47" fill="#94a3b8" font-family="sans-serif" font-size="8">CAN TX/RX, ACC</text>
+    </g>
+
+    <!-- ================= PORT 2: 10-PIN CAMERA INPUT PORT ================= -->
+    <g id="port-camera" transform="translate(15, 138)">
+      <rect x="0" y="0" width="245" height="54" rx="6" fill="#090d16" stroke="#eab308" stroke-width="1.8" />
+      <text x="10" y="18" fill="#facc15" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800">10-PIN CAMERA / CAM-IN PORT</text>
+      <text x="235" y="17" fill="#fef08a" font-family="sans-serif" font-size="8.5" font-weight="700" text-anchor="end">PORT #2</text>
+      <!-- 2x5 Pin Socket -->
+      <g transform="translate(10, 24)">
+        <rect x="0" y="0" width="85" height="22" rx="3" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <!-- Pins -->
+        <circle cx="9" cy="6" r="2.5" fill="#fef08a" />
+        <circle cx="25" cy="6" r="2.5" fill="#fef08a" />
+        <circle cx="41" cy="6" r="2.5" fill="#fef08a" />
+        <circle cx="57" cy="6" r="2.5" fill="#fef08a" />
+        <circle cx="73" cy="6" r="2.5" fill="#fef08a" />
+        <circle cx="9" cy="16" r="2.5" fill="#fef08a" />
+        <circle cx="25" cy="16" r="2.5" fill="#fef08a" />
+        <circle cx="41" cy="16" r="2.5" fill="#fef08a" />
+        <circle cx="57" cy="16" r="2.5" fill="#fef08a" />
+        <circle cx="73" cy="16" r="2.5" fill="#fef08a" />
+      </g>
+      <text x="105" y="34" fill="#fef08a" font-family="sans-serif" font-size="8.5" font-weight="700">Yellow RCA Pigtail</text>
+      <text x="105" y="46" fill="#94a3b8" font-family="sans-serif" font-size="8">OEM Reverse Cam Input</text>
+    </g>
+
+    <!-- ================= PORT 3: GPS ANTENNA (SMA BRASS) ================= -->
+    <g id="port-gps" transform="translate(15, 200)">
+      <rect x="0" y="0" width="245" height="48" rx="6" fill="#090d16" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="10" y="17" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800">GPS ANTENNA PORT</text>
+      <!-- Brass SMA Connector -->
+      <g transform="translate(10, 23)">
+        <circle cx="12" cy="12" r="10" fill="url(#goldSmaGrad)" stroke="#451a03" stroke-width="1.2" />
+        <circle cx="12" cy="12" r="6" fill="#090d16" stroke="#ca8a04" stroke-width="1" />
+        <circle cx="12" cy="12" r="2" fill="#fde047" />
+      </g>
+      <text x="38" y="32" fill="#ffffff" font-family="sans-serif" font-size="8.5" font-weight="700">Threaded Brass SMA Nut</text>
+      <text x="38" y="43" fill="#94a3b8" font-family="sans-serif" font-size="8">Hand-tighten magnetic puck antenna</text>
+    </g>
+
+    <!-- ================= PORT 4: RADIO ANTENNA (DIN) ================= -->
+    <g id="port-radio" transform="translate(15, 256)">
+      <rect x="0" y="0" width="245" height="48" rx="6" fill="#090d16" stroke="#64748b" stroke-width="1.5" />
+      <text x="10" y="17" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800">AM/FM RADIO ANTENNA</text>
+      <!-- Motorola DIN Socket -->
+      <g transform="translate(10, 23)">
+        <circle cx="12" cy="12" r="10" fill="#475569" stroke="#94a3b8" stroke-width="1" />
+        <circle cx="12" cy="12" r="4" fill="#020617" />
+        <circle cx="12" cy="12" r="1.5" fill="#f8fafc" />
+      </g>
+      <text x="38" y="32" fill="#ffffff" font-family="sans-serif" font-size="8.5" font-weight="700">Motorola DIN Jack</text>
+      <text x="38" y="43" fill="#94a3b8" font-family="sans-serif" font-size="8">Connects to Ford black antenna lead</text>
+    </g>
+
+    <!-- ================= PORT 5: DUAL USB PORTS (4-PIN & 6-PIN) ================= -->
+    <g id="port-usb" transform="translate(15, 312)">
+      <rect x="0" y="0" width="245" height="56" rx="6" fill="#090d16" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="10" y="17" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800">DUAL USB PORTS (USB 1 &amp; 2)</text>
+      <!-- USB 1 (4-pin) -->
+      <g transform="translate(10, 25)">
+        <rect x="0" y="0" width="45" height="20" rx="3" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <circle cx="8" cy="10" r="2" fill="#38bdf8" />
+        <circle cx="17" cy="10" r="2" fill="#38bdf8" />
+        <circle cx="26" cy="10" r="2" fill="#38bdf8" />
+        <circle cx="35" cy="10" r="2" fill="#38bdf8" />
+        <text x="22" y="29" fill="#94a3b8" font-family="sans-serif" font-size="7" text-anchor="middle">4-Pin (OTG)</text>
+      </g>
+      <!-- USB 2 (6-pin) -->
+      <g transform="translate(68, 25)">
+        <rect x="0" y="0" width="60" height="20" rx="3" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <circle cx="8" cy="10" r="1.8" fill="#38bdf8" />
+        <circle cx="17" cy="10" r="1.8" fill="#38bdf8" />
+        <circle cx="26" cy="10" r="1.8" fill="#38bdf8" />
+        <circle cx="35" cy="10" r="1.8" fill="#38bdf8" />
+        <circle cx="44" cy="10" r="1.8" fill="#38bdf8" />
+        <circle cx="53" cy="10" r="1.8" fill="#38bdf8" />
+        <text x="30" y="29" fill="#94a3b8" font-family="sans-serif" font-size="7" text-anchor="middle">6-Pin (Media)</text>
+      </g>
+      <text x="138" y="34" fill="#ffffff" font-family="sans-serif" font-size="8" font-weight="700">Wired Carplay / AA</text>
+      <text x="138" y="46" fill="#94a3b8" font-family="sans-serif" font-size="8">Route to glovebox</text>
+    </g>
+
+    <!-- ================= PORT 6: 20-PIN RCA AUDIO BLOCK (OPTIONAL) ================= -->
+    <g id="port-rca" transform="translate(15, 376)" opacity="0.65">
+      <rect x="0" y="0" width="245" height="52" rx="6" fill="#090d16" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4,3" />
+      <text x="10" y="17" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700">20-PIN RCA AUX / AUDIO OUT</text>
+      <text x="235" y="16" fill="#64748b" font-family="sans-serif" font-size="8" text-anchor="end">OPTIONAL</text>
+      <!-- 2x10 Pin Socket -->
+      <g transform="translate(10, 24)">
+        <rect x="0" y="0" width="110" height="20" rx="3" fill="#1e293b" />
+        <line x1="10" y1="5" x2="100" y2="5" stroke="#64748b" stroke-dasharray="2,2" stroke-width="2" />
+        <line x1="10" y1="15" x2="100" y2="15" stroke="#64748b" stroke-dasharray="2,2" stroke-width="2" />
+      </g>
+      <text x="130" y="34" fill="#94a3b8" font-family="sans-serif" font-size="8">Aftermarket Subs/Amps</text>
+      <text x="130" y="44" fill="#64748b" font-family="sans-serif" font-size="7.5">Leave unplugged for OEM</text>
+    </g>
+
+    <!-- Lower cavity reminder -->
+    <rect x="15" y="438" width="245" height="38" rx="4" fill="#0f172a" stroke="#0284c7" stroke-width="1" />
+    <text x="122" y="453" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="700" text-anchor="middle">ROUTE HEAVY BUNDLES DOWNWARD</text>
+    <text x="122" y="467" fill="#94a3b8" font-family="sans-serif" font-size="7.5" text-anchor="middle">Do NOT pinch wires behind heatsink!</text>
+  </g>
+
+  <!-- ==================== CENTER & RIGHT: HARNESSES ==================== -->
+
+  <!-- ==================== HARNESS #1: 2015-2018 F150 PRIMARY (GREEN BORDER) ==================== -->
+  <g transform="translate(320, 56)">
+    <!-- Main Card Body -->
+    <rect x="0" y="0" width="555" height="270" rx="10" fill="url(#activeHarnessGrad)" stroke="#22c55e" stroke-width="2.5" filter="url(#shadowFilter)" />
+
+    <!-- Card Title Badge -->
+    <rect x="15" y="10" width="290" height="22" rx="4" fill="#064e3b" stroke="#22c55e" stroke-width="1.2" />
+    <text x="160" y="25" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">✔ HARNESS 1: 2015–2018 F-150 (USE THIS ONE)</text>
+    <text x="540" y="25" fill="#86efac" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="700" text-anchor="end">LABELED "2015-2018 F150"</text>
+
+    <!-- Sub-diagram: Connection Pathway -->
+    <!-- 1. Incifum 16-Pin Plug Male -->
+    <g transform="translate(20, 48)">
+      <rect x="0" y="0" width="85" height="42" rx="4" fill="#1e293b" stroke="#22c55e" stroke-width="1.5" />
+      <text x="42" y="18" fill="#22c55e" font-family="sans-serif" font-size="9" font-weight="800" text-anchor="middle">16-PIN PLUG</text>
+      <text x="42" y="32" fill="#cbd5e1" font-family="sans-serif" font-size="8" text-anchor="middle">To Unit Port #1</text>
+    </g>
+
+    <!-- Bundle Wires Flowing to CANbus Decoder & Ford Plug -->
+    <path d="M 105 69 L 145 69" stroke="#22c55e" stroke-width="4" />
+    <path d="M 105 65 L 145 65" stroke="#38bdf8" stroke-width="2" />
+    <path d="M 105 73 L 145 73" stroke="#f59e0b" stroke-width="2" />
+
+    <!-- 2. CANbus Decoder Box -->
+    <g transform="translate(145, 42)">
+      <rect x="0" y="0" width="135" height="74" rx="6" fill="url(#canboxGrad)" stroke="#475569" stroke-width="2" filter="url(#shadowFilter)" />
+      <rect x="8" y="6" width="119" height="15" rx="3" fill="#0f172a" />
+      <text x="67" y="17" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="800" text-anchor="middle">CANBUS DECODER</text>
+      <text x="67" y="36" fill="#f8fafc" font-family="sans-serif" font-size="9" font-weight="700" text-anchor="middle">RAISE / HIWORLD</text>
+      <text x="67" y="49" fill="#94a3b8" font-family="sans-serif" font-size="8" text-anchor="middle">Ford-RZ-08 / F150</text>
+      <rect x="18" y="55" width="100" height="14" rx="2" fill="#064e3b" />
+      <text x="68" y="65" fill="#86efac" font-family="sans-serif" font-size="7.5" font-weight="700" text-anchor="middle">TRANSLATES FORD AC &amp; SWC</text>
+    </g>
+
+    <!-- Heavy harness continuation -->
+    <path d="M 280 75 L 340 75" stroke="#22c55e" stroke-width="5" />
+    <path d="M 280 80 L 340 80" stroke="#f59e0b" stroke-width="2" />
+
+    <!-- 3. Ford 24-Pin Dash Connector (Mates to Factory Truck Harness) -->
+    <g transform="translate(340, 44)">
+      <rect x="0" y="0" width="195" height="68" rx="6" fill="#0f172a" stroke="#22c55e" stroke-width="2" />
+      <rect x="10" y="6" width="175" height="18" rx="3" fill="#064e3b" />
+      <text x="97" y="19" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800" text-anchor="middle">FORD 24-PIN DASH PLUG</text>
+      <text x="97" y="38" fill="#86efac" font-family="sans-serif" font-size="9" font-weight="700" text-anchor="middle">MATES TO FACTORY TRUCK PLUG</text>
+      <text x="97" y="51" fill="#cbd5e1" font-family="sans-serif" font-size="8" text-anchor="middle">The main 24-pin harness that was</text>
+      <text x="97" y="61" fill="#cbd5e1" font-family="sans-serif" font-size="8" text-anchor="middle">unplugged from back of factory radio</text>
+    </g>
+
+    <!-- Branch Wire 1: Critical White 6-Pin Climate / AC Plug -->
+    <g transform="translate(20, 134)">
+      <!-- Branching wire -->
+      <path d="M 90 -20 C 90 20, 60 20, 40 25" fill="none" stroke="#f8fafc" stroke-width="2.5" />
+      <rect x="20" y="20" width="220" height="48" rx="5" fill="#0c1a2e" stroke="#f8fafc" stroke-width="1.8" />
+      <rect x="28" y="26" width="36" height="34" rx="3" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5" />
+      <!-- 6 pins inside -->
+      <circle cx="36" cy="34" r="2" fill="#020617" />
+      <circle cx="46" cy="34" r="2" fill="#020617" />
+      <circle cx="56" cy="34" r="2" fill="#020617" />
+      <circle cx="36" cy="46" r="2" fill="#020617" />
+      <circle cx="46" cy="46" r="2" fill="#020617" />
+      <circle cx="56" cy="46" r="2" fill="#020617" />
+      <text x="74" y="38" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800">WHITE 6-PIN CLIMATE PLUG</text>
+      <text x="74" y="50" fill="#fca5a5" font-family="sans-serif" font-size="8" font-weight="700">MUST PLUG INTO DASH AC HARNESS!</text>
+      <text x="74" y="61" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Missing this = AC compressor won't blow!</text>
+    </g>
+
+    <!-- Branch Wire 2: Backup Camera RCA Yellow Jack -->
+    <g transform="translate(270, 134)">
+      <!-- Branching wire -->
+      <path d="M 0 -20 C 0 15, 30 15, 40 25" fill="none" stroke="#eab308" stroke-width="2.5" />
+      <rect x="20" y="20" width="245" height="48" rx="5" fill="#1c1605" stroke="#eab308" stroke-width="1.8" />
+      <!-- RCA Male & Female Joint Graphic -->
+      <g transform="translate(30, 32)">
+        <rect x="0" y="4" width="26" height="16" rx="3" fill="url(#rcaYellowGrad)" stroke="#713f12" stroke-width="1" />
+        <rect x="26" y="8" width="10" height="8" rx="1" fill="#cbd5e1" />
+        <rect x="36" y="4" width="26" height="16" rx="3" fill="url(#rcaYellowGrad)" stroke="#713f12" stroke-width="1" />
+      </g>
+      <text x="105" y="38" fill="#facc15" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800">FACTORY BACKUP CAMERA RCA</text>
+      <text x="105" y="50" fill="#ffffff" font-family="sans-serif" font-size="8" font-weight="700">Connect 10-pin yellow female to harness</text>
+      <text x="105" y="61" fill="#cbd5e1" font-family="sans-serif" font-size="7.5">Immediate reverse trigger via CANbus!</text>
+    </g>
+
+    <!-- Branch Wire 3: GPS Antenna Puck Routing -->
+    <g transform="translate(20, 202)">
+      <rect x="20" y="0" width="495" height="42" rx="5" fill="#0c1829" stroke="#38bdf8" stroke-width="1.2" />
+      <!-- GPS Puck Graphic -->
+      <rect x="32" y="8" width="26" height="26" rx="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="45" y="25" fill="#38bdf8" font-family="sans-serif" font-size="8" font-weight="800" text-anchor="middle">GPS</text>
+      <!-- Coax Cable -->
+      <path d="M 58 21 L 100 21" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,2" />
+      <text x="110" y="19" fill="#38bdf8" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800">MAGNETIC GPS ANTENNA PUCK ROUTING:</text>
+      <text x="110" y="32" fill="#cbd5e1" font-family="sans-serif" font-size="8">Screw SMA brass nut onto Port #3 -> Stick magnetic puck atop dash defrost duct under windshield.</text>
+    </g>
+  </g>
+
+  <!-- ==================== HARNESS #2: RAPTOR / HIGH-TRIM (RED BORDER & X) ==================== -->
+  <g transform="translate(320, 340)">
+    <!-- Main Card Body -->
+    <rect x="0" y="0" width="280" height="188" rx="10" fill="url(#warningCardGrad)" stroke="#ef4444" stroke-width="2" filter="url(#shadowFilter)" />
+
+    <!-- Card Title Badge -->
+    <rect x="15" y="10" width="250" height="22" rx="4" fill="#450a0a" stroke="#ef4444" stroke-width="1" />
+    <text x="140" y="25" fill="#fca5a5" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" text-anchor="middle">❌ HARNESS 2: "RAPTOR / HIGH-TRIM"</text>
+
+    <!-- Subtext -->
+    <text x="140" y="47" fill="#ef4444" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" text-anchor="middle">DO NOT USE! LEAVE IN BOX!</text>
+
+    <!-- Stylized Red X Graphic Box -->
+    <g transform="translate(20, 56)">
+      <rect x="0" y="0" width="240" height="85" rx="5" fill="#180505" stroke="#ef4444" stroke-width="1.2" />
+      <!-- Crossed Out Wire Silhouette -->
+      <rect x="25" y="25" width="45" height="30" rx="3" fill="#334155" />
+      <rect x="170" y="25" width="45" height="30" rx="3" fill="#334155" />
+      <path d="M 70 40 L 170 40" stroke="#475569" stroke-width="4" />
+      <!-- Giant Red Strike-through X -->
+      <line x1="15" y1="10" x2="225" y2="75" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round" />
+      <line x1="225" y1="10" x2="15" y2="75" stroke="#ef4444" stroke-width="3.5" stroke-linecap="round" />
+      <rect x="65" y="32" width="110" height="20" rx="3" fill="#000000" fill-opacity="0.8" />
+      <text x="120" y="46" fill="#fca5a5" font-family="sans-serif" font-size="9" font-weight="800" text-anchor="middle">RAPTOR ONLY</text>
+    </g>
+
+    <!-- Warning Detail -->
+    <text x="140" y="158" fill="#fca5a5" font-family="sans-serif" font-size="8" text-anchor="middle">For factory amplified Sony / B&amp;O setups.</text>
+    <text x="140" y="172" fill="#ef4444" font-family="sans-serif" font-size="8" font-weight="700" text-anchor="middle">Plugging this in standard F-150 causes black screen!</text>
+  </g>
+
+  <!-- ==================== RIGHT: UNUSED / OPTIONAL WIRES (GREYED OUT) ==================== -->
+  <g transform="translate(615, 340)">
+    <!-- Main Card Body -->
+    <rect x="0" y="0" width="260" height="188" rx="10" fill="url(#unusedCardGrad)" stroke="#64748b" stroke-width="1.8" stroke-dasharray="5,4" filter="url(#shadowFilter)" />
+
+    <!-- Card Title Badge -->
+    <rect x="15" y="10" width="230" height="22" rx="4" fill="#1e293b" stroke="#64748b" stroke-width="1" />
+    <text x="130" y="25" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">OPTIONAL / UNUSED LEADS</text>
+
+    <!-- Stamp Text -->
+    <rect x="25" y="40" width="210" height="24" rx="4" fill="#334155" fill-opacity="0.5" />
+    <text x="130" y="56" fill="#cbd5e1" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800" text-anchor="middle">LEAVE DISCONNECTED &amp; TAPE</text>
+
+    <!-- Itemized List of Unused Wires -->
+    <g transform="translate(15, 74)">
+      <!-- Item 1: Reverse Wire -->
+      <circle cx="10" cy="8" r="4" fill="#ef4444" fill-opacity="0.4" stroke="#ef4444" stroke-width="1" />
+      <text x="22" y="11" fill="#f8fafc" font-family="sans-serif" font-size="8.5" font-weight="700">Brown/Pink "BACK/REV" Wire</text>
+      <text x="22" y="22" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Not needed: CANbus signals reverse</text>
+
+      <!-- Item 2: Steering Wheel KEY 1 / KEY 2 -->
+      <circle cx="10" cy="36" r="4" fill="#ef4444" fill-opacity="0.4" stroke="#ef4444" stroke-width="1" />
+      <text x="22" y="39" fill="#f8fafc" font-family="sans-serif" font-size="8.5" font-weight="700">Orange "KEY 1" &amp; "KEY 2" Wires</text>
+      <text x="22" y="50" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Not needed: CANbox decodes SWC buttons</text>
+
+      <!-- Item 3: 4G / SIM Slot -->
+      <circle cx="10" cy="64" r="4" fill="#64748b" fill-opacity="0.4" stroke="#64748b" stroke-width="1" />
+      <text x="22" y="67" fill="#f8fafc" font-family="sans-serif" font-size="8.5" font-weight="700">External SIM Card Slot Dongle</text>
+      <text x="22" y="78" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Optional: Only if inserting cellular SIM card</text>
+
+      <!-- Item 4: Amp Turn-On / Sub RCA -->
+      <circle cx="10" cy="92" r="4" fill="#64748b" fill-opacity="0.4" stroke="#64748b" stroke-width="1" />
+      <text x="22" y="95" fill="#f8fafc" font-family="sans-serif" font-size="8.5" font-weight="700">Blue "AMP-CON" &amp; RCA Pre-outs</text>
+      <text x="22" y="105" fill="#94a3b8" font-family="sans-serif" font-size="7.5">Leave taped unless installing sub amp</text>
+    </g>
+  </g>
+
+  <!-- ==================== FLOW ARROWS BETWEEN CHASSIS AND HARNESS ==================== -->
+  <!-- Connection from Port 1 to Harness 1 -->
+  <path d="M 260 156 C 290 156, 300 125, 335 125" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" marker-end="url(#cyanArrow)" filter="url(#greenGlow)" />
+
+  <!-- Connection from Port 2 to RCA Yellow -->
+  <path d="M 260 220 C 290 220, 480 220, 560 215" fill="none" stroke="#eab308" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,3" />
+
+  <!-- Connection from Port 3 to GPS Puck -->
+  <path d="M 260 280 C 280 280, 310 280, 350 280" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,3" />
+
+  <!-- Bottom Footer Line -->
+  <g transform="translate(25, 548)">
+    <text x="425" y="0" fill="#64748b" font-family="system-ui, -apple-system, sans-serif" font-size="8" text-anchor="middle">
+      SCHEMATIC VERIFIED FOR 2018 FORD F-150 (MANUAL SINGLE-ZONE &amp; AUTOMATIC DUAL-ZONE AC CONFIGURATIONS)
+    </text>
+  </g>
+</svg>
